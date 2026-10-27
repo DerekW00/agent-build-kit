@@ -1,0 +1,14 @@
+{
+  "build": [
+    "build-session",
+    "build-journal",
+    "verify-change"
+  ],
+  "long-session": [
+    "build-session",
+    "build-journal",
+    "verify-change",
+    "session-handoff"
+  ],
+  "manual": []
+}
