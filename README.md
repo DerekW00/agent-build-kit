@@ -2,9 +2,11 @@
 
 A small, project-local workflow for **Claude Code and Codex**: scope a build, research a blocking question, design and review the mechanism, record consequential decisions, verify behavior, and resume longer sessions. It keeps evidence for a demo without turning the build into a documentation exercise.
 
+**Build Journal is included in this repository**: its Claude/Codex skill, Python helper, decision templates and references. You only need to download Agent Build Kit.
+
 Python 3.9+ is the only installer dependency. No package installation, credentials, model calls, global settings, hooks or background services are added. The same skill content is copied to each provider's documented project location.
 
-## Set up in a few minutes
+## One-repository setup, including Build Journal
 
 This initial kit is published on `feat/portable-kit` for review. Until that change merges, clone that branch:
 
@@ -12,16 +14,16 @@ This initial kit is published on `feat/portable-kit` for review. Until that chan
 git clone --branch feat/portable-kit https://github.com/DerekW00/agent-build-kit.git
 cd agent-build-kit
 python3 kit.py doctor
-python3 kit.py install --project /absolute/path/to/your/project --provider both --profile build
+python3 kit.py install --project /absolute/path/to/your/project --provider both --profile long-session
 ```
 
 The target must be an **existing project directory**. The last command only previews changes. Inspect the list, then apply:
 
 ```sh
-python3 kit.py install --project /absolute/path/to/your/project --provider both --profile build --apply
+python3 kit.py install --project /absolute/path/to/your/project --provider both --profile long-session --apply
 ```
 
-Use `--provider claude` or `--provider codex` to install one provider. Use `--profile long-session` for all seven skills, including research/design and checkpointing. Add `--with-instructions` only when you also want the starter `AGENTS.md` and `CLAUDE.md`; installation refuses if either exists. Existing project instructions are never merged or overwritten.
+This `long-session` setup installs all seven skills, including Build Journal, for both providers. Use `--provider claude` or `--provider codex` to install one provider. Use `--profile build` for the smaller three-skill setup, which also includes Build Journal. Add `--with-instructions` only when you also want the starter `AGENTS.md` and `CLAUDE.md`; installation refuses if either exists. Existing project instructions are never merged or overwritten.
 
 Base profiles refuse an existing skill destination or `.agent-kit/`. The `design` add-on uses separate metadata and can extend an existing base kit. Neither path overwrites existing files or upgrades old skills. [Installation details and boundaries](docs/installation.md).
 
@@ -66,6 +68,16 @@ Example prompt in an AI-permitted session:
 
 For an existing build, invoke only the skill you need. For example, `/build-journal Capture the decisions from this session in notes/` in Claude Code, or `$build-journal …` in Codex. A one-time capture does not start background monitoring.
 
+### Bundled Build Journal
+
+The complete bundle is in `skills/build-journal/`. Installation copies its helper, templates and references together. After installation, you can remove the downloaded kit checkout; the project copy remains usable.
+
+In an AI-permitted session, ask `/build-journal` in Claude Code or `$build-journal` in Codex to keep notes in `notes/`. It records:
+
+- `BUILD.md`: goal, constraints, design and verification state.
+- `PROCESS.md`: experiments, failures, corrections and next steps.
+- `decisions/D###-name.md`: considered options, choice, reasons and tradeoffs.
+
 The installed journal helper also works without a model:
 
 ```sh
@@ -84,7 +96,7 @@ These instructions are for **Claude Code and Codex with project-file access**. P
 | Profile | Contents | Use |
 | --- | --- | --- |
 | `build` | Build session, build journal, verify change | A short AI-permitted build |
-| `long-session` | All seven skills | A fresh project needing the complete kit |
+| `long-session` | All seven skills, including Build Journal | One-repository setup for a fresh project |
 | `design` | Technical research, system design, design review | Standalone design work or an add-on to an existing base kit |
 | `manual` | Blank checklist and local setup record; no AI skills | Manual practice, only where imported materials are allowed |
 
