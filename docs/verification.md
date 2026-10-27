@@ -24,6 +24,10 @@ The final combined suite passed **60 tests** (29 installer/doctor, 31 journal) o
 
 No smoke-test transcript, global prompt, personal configuration or authentication data is included here.
 
+## Public download check
+
+A fresh HTTPS clone of `feat/portable-kit` succeeded with Git credential helpers, global configuration and interactive prompts disabled. The downloaded implementation at `eeabf5b0187291a7119a0b35b8885caae5a91cdb` passed all 60 tests. Dry-run installation preserved an empty target; the long-session profile installed both providers, all 25 payload hashes matched, both journal helpers ran, and the manual profile created no AI skill directories. The following commit records these results and completes the checklist without changing implementation.
+
 ## Limits
 
 - Installer/helper runtime checks were on macOS with Python 3.9.6. Other operating systems were not exercised.
