@@ -30,7 +30,7 @@ Version 0.2: 68 tests, three new skill-format checks, independent adversarial/fo
 - [x] Confirm Build Journal is already bundled with its helper, templates and references.
 - [x] Make the main README setup install all seven skills, including Build Journal.
 - [x] Verify a fresh public download and standalone installed journal without the checkout.
-- [ ] Publish README clarification and update the existing draft PR.
+- [x] Publish README clarification and update the existing draft PR.
 
 Changed paths for this clarification: README.md and plan.md.
 
