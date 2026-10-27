@@ -10,6 +10,9 @@ The selection criterion is useful engineering behavior with little setup: produc
 | Build journal | Records consequential options, reasons and evidence for review | One writer; no exhaustive-option claim or invented rationale |
 | Verify change | Challenges generated code against independent expectations | Select checks by actual risk; avoid ritual test expansion |
 | Session handoff | Supports interruptions and provider switches | One short snapshot linked to canonical records; no repeated status loop |
+| Technical research (design add-on) | Resolves a blocking question with version-matched evidence | No open-ended survey or mandatory connector |
+| System design (design add-on) | Makes data, interfaces and failures concrete | No invented scale targets or mandatory large document |
+| Design review (design add-on) | Challenges the mechanism with counterexamples | One bounded pass; recommendations do not accept risks for the user |
 
 ## Optional, depending on the task
 

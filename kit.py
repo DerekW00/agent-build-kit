@@ -18,7 +18,7 @@ import sys
 KIT_ROOT = Path(__file__).resolve().parent
 PROVIDERS = {"claude": (".claude/skills",), "codex": (".agents/skills",),
              "both": (".claude/skills", ".agents/skills")}
-PROFILES = ("build", "long-session", "manual")
+PROFILES = ("build", "long-session", "design", "manual")
 SKILL_NAME = re.compile(r"[a-z0-9]+(?:-[a-z0-9]+)*\Z")
 
 
@@ -144,6 +144,10 @@ def preflight(plan):
     return sorted(conflicts)
 
 
+def metadata_directory(profile):
+    return Path(".agent-kit/design") if profile == "design" else Path(".agent-kit")
+
+
 def build_plan(project, provider, profile, with_instructions=False, source_root=None):
     if provider not in PROVIDERS or profile not in PROFILES:
         raise KitError("unknown provider or profile")
@@ -167,16 +171,17 @@ def build_plan(project, provider, profile, with_instructions=False, source_root=
     if not version or "\n" in version or "\r" in version:
         raise KitError("VERSION must contain one nonempty line")
 
-    directories = {Path(".agent-kit")}
-    exclusive = [Path(".agent-kit")]
+    metadata_root = metadata_directory(profile)
+    directories = {metadata_root}
+    exclusive = [metadata_root]
     files = []
     for provider_root in PROVIDERS[provider]:
         for name in names:
             destination = Path(provider_root) / name
             exclusive.append(destination)
             add_skill(root, name, destination, directories, files)
-    templates = [("LOCAL-SETUP.md", ".agent-kit/SETUP.md"),
-                 ("MANUAL.md", ".agent-kit/MANUAL.md")]
+    templates = [("LOCAL-SETUP.md", metadata_root / "SETUP.md"),
+                 ("MANUAL.md", metadata_root / "MANUAL.md")]
     if profile == "long-session":
         templates.append(("SESSION.md", ".agent-kit/SESSION.template.md"))
     if with_instructions:
@@ -187,7 +192,7 @@ def build_plan(project, provider, profile, with_instructions=False, source_root=
     manifest = {"version": version, "profile": profile, "provider": provider,
                 "files": {entry.relative.as_posix(): hashlib.sha256(entry.content).hexdigest()
                           for entry in sorted(files, key=lambda item: item.relative.as_posix())}}
-    files.append(FileEntry(Path(".agent-kit/installed.json"),
+    files.append(FileEntry(metadata_root / "installed.json",
                            (json.dumps(manifest, indent=2, sort_keys=True) + "\n").encode("utf-8")))
     for path in list(directories) + [entry.relative for entry in files]:
         directories.update(parent for parent in path.parents if parent != Path("."))
@@ -268,7 +273,8 @@ def install(args):
         return 1
     if args.apply:
         apply_plan(plan)
-        print("Installed {} files. Manifest: .agent-kit/installed.json".format(len(plan.files)))
+        print("Installed {} files. Manifest: {}".format(
+            len(plan.files), (metadata_directory(args.profile) / "installed.json").as_posix()))
     else:
         print("No conflicts. Re-run with --apply to create these paths.")
     return 0
@@ -310,7 +316,7 @@ def parser():
     install_parser.add_argument("--provider", choices=tuple(PROVIDERS), required=True,
                                 help="Claude .claude/skills, Codex .agents/skills, or both")
     install_parser.add_argument("--profile", choices=PROFILES, required=True,
-                                help="manual creates documents only, with no AI skills")
+                                help="design adds three skills alongside an existing kit; manual creates documents only")
     install_parser.add_argument("--apply", action="store_true", help="create planned paths after conflict checks")
     install_parser.add_argument("--with-instructions", action="store_true",
                                 help="also create AGENTS.md and CLAUDE.md; forbidden for manual; refuse existing files")

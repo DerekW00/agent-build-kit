@@ -1,6 +1,6 @@
 # Provenance
 
-The installer, build-session, verify-change and session-handoff skills, project instruction templates and documentation were created for this repository with AI drafting assistance and local review.
+The installer, build-session, verify-change, session-handoff, technical-research, system-design and design-review skills, project instruction templates and documentation were created for this repository with AI drafting assistance and local review.
 
 The Build Journal helper, skill, templates, references and regression tests were selected from the repository owner's earlier Build Journal work at commit `2bd7075b1a9d0e22c99d98260f72e38032e2d2f9`. The bundle contains generic code, blank templates and synthetic tests. It excludes the earlier repository's private publication notes and local state. The skill location instructions are adapted to the self-contained bundle. The journal regression tests are adapted only for this bundle's path and omit the earlier installer tests, which this kit's installer suite replaces.
 

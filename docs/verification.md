@@ -2,7 +2,20 @@
 
 Observed October 26, 2026. This records checks actually performed and their limits; it is not a general safety or interview-readiness certification.
 
-## Automated and independent checks
+## Version 0.2 research and design extension
+
+- All **68 tests passed**: 37 installer/doctor tests and 31 journal regressions. Compilation and whitespace checks passed on Python 3.9.6.
+- The three new skills pass the skill-format validator; the original four remain unchanged. Each new skill is under 500 words, with no script, connector, model or orchestration dependency.
+- An independent reviewer installed an actual version 0.1 long-session kit, customized its files, then applied the design add-on. All 27 prior files remained unchanged; all eight added payload hashes matched. Dry run and repeat refusal preserved the target.
+- An independent agent applied all three skills to a synthetic offline fixture. A second reviewer compared outputs with raw sources. Version mismatch, malicious instructions, missing evidence, unsafe tenant identity, duplicate creation, payload conflict and ambiguous external effects were handled correctly within that fixture.
+- Two setup ambiguities were corrected: which older installs need the add-on, and the distinction between documentation browsing and executing an external application call.
+- Native discovery found all seven project skills in **Claude Code 2.1.309** and **Codex CLI 0.164.0**, with Codex aliases resolving to exact fixture files. One read-only Claude `/system-design` invocation completed without implementation/check claims; all 31 fixture files stayed unchanged. Codex had no model call in this extension check. The other new skills were not individually executed by either native CLI.
+
+The stress-case design output exceeded the suggested one-page target. This is a known verbosity limitation, not evidence that every invocation will stay compact. Ask for a short first pass when time is tight. These are bounded synthetic checks, not a guarantee of model faithfulness, application correctness or interview readiness. [Adversarial review details and changed paths](research-design-review.md).
+
+## Version 0.1 initial-kit verification history
+
+### Automated and independent checks
 
 - Installer tests cover dry-run preservation, both provider layouts, manual profile, existing instructions, conflicts, aliases, symlinks, rollback, repeat installs, manifests and standalone helpers.
 - Journal regression tests cover validation, evidence/preamble preservation, supersession, presentation links and unsafe paths.
@@ -13,7 +26,7 @@ Observed October 26, 2026. This records checks actually performed and their limi
 
 The final combined suite passed **60 tests** (29 installer/doctor, 31 journal) on Python 3.9.6. Compilation and staged whitespace checks passed. The independent reviewer also checked the cache exclusion fix.
 
-## Native host smoke tests
+### Native host smoke tests
 
 - **Claude Code 2.1.309:** runtime initialization listed all four project skills. One `/build-session` design-only run completed with acceptance criteria, a smallest slice and a tradeoff.
 - **Codex CLI 0.164.0:** debug input listed all four project skills; resolving its path aliases matched the fixture files. One `$build-session` design-only run completed with acceptance criteria, a smallest slice and a tradeoff.
@@ -24,11 +37,11 @@ The final combined suite passed **60 tests** (29 installer/doctor, 31 journal) o
 
 No smoke-test transcript, global prompt, personal configuration or authentication data is included here.
 
-## Public download check
+### Public download check
 
 A fresh HTTPS clone of `feat/portable-kit` succeeded with Git credential helpers, global configuration and interactive prompts disabled. The downloaded implementation at `eeabf5b0187291a7119a0b35b8885caae5a91cdb` passed all 60 tests. Dry-run installation preserved an empty target; the long-session profile installed both providers, all 25 payload hashes matched, both journal helpers ran, and the manual profile created no AI skill directories. The following commit records these results and completes the checklist without changing implementation.
 
-## Limits
+### Limits
 
 - Installer/helper runtime checks were on macOS with Python 3.9.6. Other operating systems were not exercised.
 - Skill-format validation is not a test of a model's judgment or faithfulness.

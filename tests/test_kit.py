@@ -28,11 +28,13 @@ class InstallerTests(unittest.TestCase):
         self.source.mkdir()
         self.project.mkdir()
         self.write("VERSION", "0.1.0\n")
+        self.design_skills = ["technical-research", "system-design", "design-review"]
         self.write("profiles.json", json.dumps({"build": ["sample"],
-                                               "long-session": ["sample", "handoff"], "manual": []}))
+                                               "long-session": ["sample", "handoff"] + self.design_skills,
+                                               "design": self.design_skills, "manual": []}))
         for name in ("LOCAL-SETUP.md", "MANUAL.md", "SESSION.md", "AGENTS.md", "CLAUDE.md"):
             self.write("templates/" + name, "# " + name + "\n")
-        for skill in ("sample", "handoff"):
+        for skill in ["sample", "handoff"] + self.design_skills:
             self.write("skills/{}/SKILL.md".format(skill), "# " + skill + "\n")
             self.write("skills/{}/references/detail.md".format(skill), "Bundled detail\n")
         helper = self.write("skills/sample/run.py", "#!/usr/bin/env python3\nprint('sample')\n")
@@ -149,6 +151,127 @@ class InstallerTests(unittest.TestCase):
         kit.apply_plan(self.plan(profile="long-session"))
         self.assertEqual((self.project / ".agent-kit/SESSION.template.md").read_text(), "# SESSION.md\n")
         self.assertTrue((self.project / ".agents/skills/handoff/SKILL.md").is_file())
+
+    def test_design_profile_installs_only_design_payload_and_exact_hashes(self):
+        plan = self.plan(profile="design")
+        kit.apply_plan(plan)
+        for provider in (".agents", ".claude"):
+            installed = self.project / provider / "skills"
+            self.assertEqual({path.name for path in installed.iterdir()}, set(self.design_skills))
+            for name in self.design_skills:
+                self.assertEqual((installed / name / "SKILL.md").read_bytes(),
+                                 (self.source / "skills" / name / "SKILL.md").read_bytes())
+        manifest_path = self.project / ".agent-kit/design/installed.json"
+        manifest = json.loads(manifest_path.read_text())
+        self.assertEqual((manifest["profile"], manifest["provider"]), ("design", "both"))
+        payload = {path.relative_to(self.project).as_posix() for path in self.project.rglob("*")
+                   if path.is_file() and path != manifest_path}
+        self.assertEqual(set(manifest["files"]), payload)
+        for relative, digest in manifest["files"].items():
+            self.assertEqual(digest, hashlib.sha256((self.project / relative).read_bytes()).hexdigest())
+        self.assertFalse((self.project / ".agent-kit/installed.json").exists())
+
+    def test_design_addition_preserves_old_base_install_and_local_edits(self):
+        profiles = json.loads((self.source / "profiles.json").read_text())
+        for base_profile in ("build", "long-session"):
+            with self.subTest(base_profile=base_profile):
+                self.project = self.base / ("old " + base_profile)
+                self.project.mkdir()
+                old_profiles = dict(profiles)
+                old_profiles["long-session"] = ["sample", "handoff"]
+                self.write("profiles.json", json.dumps(old_profiles))
+                kit.apply_plan(self.plan(profile=base_profile))
+                self.write("profiles.json", json.dumps(profiles))
+                for relative in (".agents/skills/sample/SKILL.md", ".claude/skills/sample/SKILL.md",
+                                 ".agent-kit/SETUP.md", "notes/BUILD.md", "AGENTS.md", "CLAUDE.md"):
+                    path = self.project / relative
+                    path.parent.mkdir(parents=True, exist_ok=True)
+                    path.write_text("local edits: " + relative, encoding="utf-8")
+                before = self.snapshot()
+                code, _ = self.cli("--profile", "design")
+                self.assertEqual(code, 0)
+                self.assertEqual(self.snapshot(), before)
+                code, _ = self.cli("--profile", "design", "--apply")
+                self.assertEqual(code, 0)
+                after = self.snapshot()
+                for relative, content in before.items():
+                    self.assertEqual(after[relative], content)
+                self.assertTrue((self.project / ".agent-kit/design/installed.json").is_file())
+
+    def test_design_repeat_install_and_existing_new_skill_are_refused(self):
+        skill = self.project / ".agents/skills/system-design"
+        skill.mkdir(parents=True)
+        (skill / "SKILL.md").write_text("keep existing design", encoding="utf-8")
+        before = self.snapshot()
+        code, _ = self.cli("--profile", "design", "--apply")
+        self.assertEqual(code, 1)
+        self.assertEqual(self.snapshot(), before)
+        shutil.rmtree(skill)
+        kit.apply_plan(self.plan(profile="design"))
+        before = self.snapshot()
+        code, _ = self.cli("--profile", "design", "--apply")
+        self.assertEqual(code, 1)
+        self.assertEqual(self.snapshot(), before)
+
+    def test_design_metadata_symlinks_are_refused(self):
+        outside = self.base / "outside"
+        outside.mkdir()
+        for relative in (".agent-kit", ".agent-kit/design"):
+            with self.subTest(relative=relative):
+                link = self.project / relative
+                link.parent.mkdir(parents=True, exist_ok=True)
+                link.symlink_to(outside, target_is_directory=True)
+                plan = self.plan(profile="design")
+                self.assertTrue(plan.conflicts)
+                with self.assertRaises(kit.KitError):
+                    kit.apply_plan(plan)
+                self.assertEqual(list(outside.iterdir()), [])
+                link.unlink()
+
+    def test_design_write_failure_rolls_back_and_preserves_base(self):
+        kit.apply_plan(self.plan())
+        keep = self.project / "notes/BUILD.md"
+        keep.parent.mkdir()
+        keep.write_text("existing decision", encoding="utf-8")
+        before = self.snapshot()
+        plan = self.plan(profile="design")
+        original_chmod = Path.chmod
+
+        def fail_design_payload(path, mode, **kwargs):
+            if path == self.project / ".claude/skills/design-review/SKILL.md":
+                raise OSError("injected design write failure")
+            return original_chmod(path, mode, **kwargs)
+
+        with mock.patch.object(Path, "chmod", fail_design_payload):
+            with self.assertRaisesRegex(kit.KitError, "injected design write failure"):
+                kit.apply_plan(plan)
+        self.assertEqual(self.snapshot(), before)
+
+    def test_design_optional_instructions_still_refuse_existing_files(self):
+        (self.project / "AGENTS.md").write_text("existing instructions", encoding="utf-8")
+        before = self.snapshot()
+        code, _ = self.cli("--profile", "design", "--apply", "--with-instructions")
+        self.assertEqual(code, 1)
+        self.assertEqual(self.snapshot(), before)
+
+    def test_base_profile_does_not_treat_design_as_general_upgrade(self):
+        kit.apply_plan(self.plan(profile="design"))
+        before = self.snapshot()
+        with self.assertRaises(kit.KitError):
+            kit.apply_plan(self.plan())
+        self.assertEqual(self.snapshot(), before)
+
+    def test_actual_long_session_bundle_installs_all_seven_skills_for_both_providers(self):
+        expected = {"build-session", "build-journal", "verify-change", "session-handoff",
+                    "technical-research", "system-design", "design-review"}
+        plan = kit.build_plan(self.project, "both", "long-session", source_root=ROOT)
+        kit.apply_plan(plan)
+        for provider in (".agents", ".claude"):
+            installed = self.project / provider / "skills"
+            self.assertEqual({path.name for path in installed.iterdir()}, expected)
+            for name in expected:
+                self.assertEqual((installed / name / "SKILL.md").read_bytes(),
+                                 (ROOT / "skills" / name / "SKILL.md").read_bytes())
 
     def test_instructions_are_opt_in_and_copied_exactly(self):
         kit.apply_plan(self.plan(with_instructions=True))

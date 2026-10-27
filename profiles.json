@@ -8,7 +8,15 @@
     "build-session",
     "build-journal",
     "verify-change",
-    "session-handoff"
+    "session-handoff",
+    "technical-research",
+    "system-design",
+    "design-review"
+  ],
+  "design": [
+    "technical-research",
+    "system-design",
+    "design-review"
   ],
   "manual": []
 }

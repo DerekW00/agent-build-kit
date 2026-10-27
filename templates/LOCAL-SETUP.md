@@ -10,8 +10,11 @@ Open the target project in Claude Code or Codex. Start a new session after insta
 | Capture decisions | `/build-journal` | `$build-journal` |
 | Check the result | `/verify-change` | `$verify-change` |
 | Save or resume a long session | `/session-handoff` | `$session-handoff` |
+| Resolve a technical unknown | `/technical-research` | `$technical-research` |
+| Design a small system | `/system-design` | `$system-design` |
+| Challenge a proposed design | `/design-review` | `$design-review` |
 
-The build profile includes the first three. The long-session profile includes all four. The manual profile installs no AI skills. Native invocation requires a host version supporting the documented project skill paths. A plain chat without project-file access cannot install or maintain the files automatically.
+The build profile includes the first three. The long-session profile includes all seven. The design profile includes only the last three and keeps its setup/manifest under `.agent-kit/design/`; it can be added to an existing base install. The manual profile installs no AI skills. Native invocation requires a host version supporting the documented project skill paths. A plain chat without project-file access cannot install or maintain the files automatically.
 
 Example request during an AI-permitted build:
 
@@ -22,3 +25,5 @@ If automatic discovery fails, explicitly ask the host to read the intended `SKIL
 Templates are optional. Importing this kit into an assessment requires the interviewer's permission independently of permission to use AI. No-AI phases require no AI assistance. Do not use the kit to bypass those rules.
 
 To inspect an installation, compare files against the manifest and your project diff. The installer refuses repeat/conflicting installs and does not update existing files. To remove or update, review the manifest and current edits first; preserve your records and changed files. No automatic uninstall is provided.
+
+For a research/design sequence, invoke only the needed skills: research one blocking question with the project version and official sources; describe a compact mechanism; then request one review pass with concrete counterexamples. Save to named notes only when useful. No extra connector or model is required. Offline research must disclose source/freshness limits; AI remains prohibited during a no-AI phase.

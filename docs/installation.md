@@ -4,7 +4,8 @@
 
 - Claude Code: `.claude/skills/<name>/`.
 - Codex: `.agents/skills/<name>/`.
-- Both: `.agent-kit/SETUP.md`, `.agent-kit/MANUAL.md`, and a manifest with file hashes.
+- Base profiles: `.agent-kit/SETUP.md`, `.agent-kit/MANUAL.md`, and `.agent-kit/installed.json` with payload hashes.
+- Design add-on: the same setup files and its own `installed.json` under `.agent-kit/design/`; base metadata is preserved.
 - Long session: `.agent-kit/SESSION.template.md`.
 - Optional instructions: new `AGENTS.md` plus `CLAUDE.md` importing it.
 
@@ -26,10 +27,16 @@ Global settings, managed policy, plugins and inherited instructions can still af
 
 ## Preservation and limits
 
-Installation is a dry run unless `--apply` is given. All conflicts are checked before writing. Existing skill directories, `.agent-kit/`, and optional instruction files are refused. Managed child symlinks and symlink project leaves are refused; an explicitly supplied parent alias can resolve to its real directory.
+Installation is a dry run unless `--apply` is given. All conflicts are checked before writing. Existing skill directories and optional instruction files are refused. Base profiles also refuse `.agent-kit/`. The design profile allows an existing real `.agent-kit/` parent but refuses an existing `.agent-kit/design/`; it never rewrites a base manifest. Managed child symlinks and symlink project leaves are refused; an explicitly supplied parent alias can resolve to its real directory.
 
 On an ordinary write failure, the installer attempts to remove only files/directories it created. It preserves pre-existing paths and reports rollback problems. It is a single-writer local utility, not a hardened installer for a hostile filesystem changing concurrently. Do not run two installers against the same project.
 
 `doctor` runs bounded `--version` checks for tools already on PATH. It does not check authentication, model availability, network policy, package caches or project behavior. Running a tool's version command relies on trusting that installed executable; the kit does not inspect its implementation.
 
-No automatic upgrades or uninstall are provided. Before a manual update, read `.agent-kit/installed.json`, inspect the project diff and preserve modified skills/notes. Re-run the relevant checks after any update.
+No automatic upgrades or uninstall are provided. The design profile is an additive install, not a general upgrade operation. Install a base profile first, then design, or choose long-session for a fresh complete install. A base profile after a design-only install will refuse the existing metadata parent. Before a manual update, read the relevant `.agent-kit/installed.json` or `.agent-kit/design/installed.json`, inspect the project diff and preserve modified skills/notes. Re-run the relevant checks after any update.
+
+## Existing installs and provider selection
+
+Version 0.1 installed up to four skills. Updating the kit checkout does not update copied project skills. Run `install --profile design --provider both` first as a preview, then with `--apply`, to add the three new skills without replacing the earlier copies. Existing base setup text may still describe four skills; the design add-on's setup record describes the additions.
+
+A fresh version 0.2 long-session install includes all seven. Running the design add-on again against it will conflict with the already-installed skill directories. Repeated installs and installing a second provider after creating the same profile manifest are not upgrades; choose `--provider both` initially when both are needed. No global skills are installed or removed.

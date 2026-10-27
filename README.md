@@ -1,6 +1,6 @@
 # Agent Build Kit
 
-A small, project-local workflow for **Claude Code and Codex**: scope a build, record consequential decisions, verify behavior, and resume longer sessions. It keeps evidence for a demo without turning the build into a documentation exercise.
+A small, project-local workflow for **Claude Code and Codex**: scope a build, research a blocking question, design and review the mechanism, record consequential decisions, verify behavior, and resume longer sessions. It keeps evidence for a demo without turning the build into a documentation exercise.
 
 Python 3.9+ is the only installer dependency. No package installation, credentials, model calls, global settings, hooks or background services are added. The same skill content is copied to each provider's documented project location.
 
@@ -21,9 +21,28 @@ The target must be an **existing project directory**. The last command only prev
 python3 kit.py install --project /absolute/path/to/your/project --provider both --profile build --apply
 ```
 
-Use `--provider claude` or `--provider codex` to install one provider. Use `--profile long-session` for checkpointing. Add `--with-instructions` only when you also want the starter `AGENTS.md` and `CLAUDE.md`; installation refuses if either exists. Existing project instructions are never merged or overwritten.
+Use `--provider claude` or `--provider codex` to install one provider. Use `--profile long-session` for all seven skills, including research/design and checkpointing. Add `--with-instructions` only when you also want the starter `AGENTS.md` and `CLAUDE.md`; installation refuses if either exists. Existing project instructions are never merged or overwritten.
 
-The installer refuses an existing skill destination or `.agent-kit/`. It does not upgrade a previous install. Review the manifest and preserve local edits before any manual replacement. [Installation details and boundaries](docs/installation.md).
+Base profiles refuse an existing skill destination or `.agent-kit/`. The `design` add-on uses separate metadata and can extend an existing base kit. Neither path overwrites existing files or upgrades old skills. [Installation details and boundaries](docs/installation.md).
+
+### Add research and design to an existing kit
+
+In your kit checkout, update the published branch, then preview the add-on:
+
+```sh
+git pull --ff-only origin feat/portable-kit
+python3 kit.py install --project /absolute/path/to/your/project --provider both --profile design
+```
+
+If the preview is correct, apply it:
+
+```sh
+python3 kit.py install --project /absolute/path/to/your/project --provider both --profile design --apply
+```
+
+This adds only `technical-research`, `system-design` and `design-review`, plus setup records under `.agent-kit/design/`. It preserves your existing base manifest, skills, notes and instructions. Do not add `--with-instructions` to an existing instructed project. A conflicting skill name or previous design add-on is refused, not overwritten.
+
+For a **new project needing all seven skills**, install `--profile long-session` directly. A design-only install does not include the original four skills. Base profiles will refuse an already-existing `.agent-kit/`, so use the full profile up front or install a base profile before adding `design`.
 
 ## Use directly in Claude Code or Codex
 
@@ -35,6 +54,11 @@ Open the **target project**, then start a new session if skills are not discover
 | Capture design decisions | `/build-journal` | `$build-journal` |
 | Check a change | `/verify-change` | `$verify-change` |
 | Save or resume a checkpoint | `/session-handoff` | `$session-handoff` |
+| Resolve a technical unknown | `/technical-research` | `$technical-research` |
+| Design a small system | `/system-design` | `$system-design` |
+| Challenge a proposed design | `/design-review` | `$design-review` |
+
+See [research and design usage](docs/research-design.md) for copyable prompts, outputs and selection rules.
 
 Example prompt in an AI-permitted session:
 
@@ -60,7 +84,8 @@ These instructions are for **Claude Code and Codex with project-file access**. P
 | Profile | Contents | Use |
 | --- | --- | --- |
 | `build` | Build session, build journal, verify change | A short AI-permitted build |
-| `long-session` | Build profile plus session handoff | Multi-session work or provider switches |
+| `long-session` | All seven skills | A fresh project needing the complete kit |
+| `design` | Technical research, system design, design review | Standalone design work or an add-on to an existing base kit |
 | `manual` | Blank checklist and local setup record; no AI skills | Manual practice, only where imported materials are allowed |
 
 For an assessment, permission to use AI **does not establish permission to import this kit**. Confirm personal-material rules separately. During a no-AI debugging round or no-internet/no-AI design phase, do not use an assistant. Even the manual template requires permission to bring personal materials. The manual profile is not an AI-disable switch; it does not remove existing skills or change your host's settings.
