@@ -21,4 +21,6 @@ Private audit inputs never belong in this repository. Public access was explicit
 - [x] Add a design profile that preserves existing base installations.
 - [x] Document fresh setup, add-on setup and direct usage in both providers.
 - [x] Run independent adversarial review, behavioral forward tests and installer checks.
-- [ ] Publish the reviewed update on the existing public branch and refresh its draft PR.
+- [x] Publish the reviewed update on the existing public branch and refresh its draft PR.
+
+Version 0.2: 68 tests, three new skill-format checks, independent adversarial/forward review, native seven-skill discovery and fresh public-download installs verified. Setup: docs/research-design.md. Review and all changed paths: docs/research-design-review.md.

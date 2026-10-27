@@ -13,6 +13,8 @@ Observed October 26, 2026. This records checks actually performed and their limi
 
 The stress-case design output exceeded the suggested one-page target. This is a known verbosity limitation, not evidence that every invocation will stay compact. Ask for a short first pass when time is tight. These are bounded synthetic checks, not a guarantee of model faithfulness, application correctness or interview readiness. [Adversarial review details and changed paths](research-design-review.md).
 
+A fresh credential-free public clone of implementation commit `60d1ab2b7ee2365be2fc818e28d71ed008840607` passed all 68 tests. The documented fresh long-session command installed seven skills for each provider. The build-then-design path preserved all 23 existing fixture files, verified eight add-on payload hashes, and refused a repeat with no changes. These are a separate public-download fixture from the 27-file older-version review above.
+
 ## Version 0.1 initial-kit verification history
 
 ### Automated and independent checks
