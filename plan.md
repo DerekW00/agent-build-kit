@@ -41,7 +41,7 @@ October 27 evidence: credential-free public clone at 00e94bec passed 68 tests, c
 - [x] Verify the initial PR is merged and `main` contains the complete kit.
 - [x] Use `main` in current clone and update instructions; retain dated historical evidence.
 - [x] Run repository checks and a fresh long-session installation for both providers.
-- [x] Publish the correction for review: https://github.com/DerekW00/agent-build-kit/pull/2 (draft; merge pending).
+- [x] Publish the correction for review: https://github.com/DerekW00/agent-build-kit/pull/2.
 
 Changed paths: README.md and plan.md. The existing installer and skills are unchanged.
 
