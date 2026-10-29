@@ -7,9 +7,9 @@
 - [x] Run independent privacy and method review plus fresh-install checks.
 - [x] Publish reviewed files on a public feature branch and attach a draft PR.
 
-Published: https://github.com/DerekW00/agent-build-kit/tree/feat/portable-kit
+Published: https://github.com/DerekW00/agent-build-kit
 
-Draft review: https://github.com/DerekW00/agent-build-kit/pull/1
+Initial review (merged October 27, 2026): https://github.com/DerekW00/agent-build-kit/pull/1
 
 Initial version 0.1: fresh public clone, 60 tests, both-provider install and manual profile verified. See docs/verification.md for scope and limits.
 
@@ -35,3 +35,14 @@ Version 0.2: 68 tests, three new skill-format checks, independent adversarial/fo
 Changed paths for this clarification: README.md and plan.md.
 
 October 27 evidence: credential-free public clone at 00e94bec passed 68 tests, compilation and whitespace checks. Both installed Build Journal copies ran help, init, decision, log and present after deleting the downloaded checkout. The checker correctly reported unresolved template placeholders; no separate Build Journal checkout was used.
+
+## Main-branch setup correction — October 29, 2026
+
+- [x] Verify the initial PR is merged and `main` contains the complete kit.
+- [x] Use `main` in current clone and update instructions; retain dated historical evidence.
+- [x] Run repository checks and a fresh long-session installation for both providers.
+- [ ] Publish the correction for review.
+
+Changed paths: README.md and plan.md. The existing installer and skills are unchanged.
+
+October 29 evidence: the correction starts from `main` at `6c2909d`. All 68 tests passed; compilation and whitespace checks passed. A fresh temporary project was unchanged by the dry run, then received all seven skills for both providers; both installed journal helpers ran successfully. The previous feature branch appears only in the dated historical clone record in docs/verification.md.

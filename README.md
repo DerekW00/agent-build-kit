@@ -8,10 +8,10 @@ Python 3.9+ is the only installer dependency. No package installation, credentia
 
 ## One-repository setup, including Build Journal
 
-This initial kit is published on `feat/portable-kit` for review. Until that change merges, clone that branch:
+Clone the repository's default branch, `main`:
 
 ```sh
-git clone --branch feat/portable-kit https://github.com/DerekW00/agent-build-kit.git
+git clone https://github.com/DerekW00/agent-build-kit.git
 cd agent-build-kit
 python3 kit.py doctor
 python3 kit.py install --project /absolute/path/to/your/project --provider both --profile long-session
@@ -29,10 +29,12 @@ Base profiles refuse an existing skill destination or `.agent-kit/`. The `design
 
 ### Add research and design to an existing kit
 
-In your kit checkout, update the published branch, then preview the add-on:
+In your kit checkout, switch to `main`, update it, then preview the add-on. If switching or updating fails because of local changes or divergent commits, resolve those first; do not discard them:
 
 ```sh
-git pull --ff-only origin feat/portable-kit
+git fetch origin
+git switch main
+git pull --ff-only origin main
 python3 kit.py install --project /absolute/path/to/your/project --provider both --profile design
 ```
 
