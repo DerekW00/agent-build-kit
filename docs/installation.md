@@ -11,6 +11,8 @@
 
 Every Build Journal copy includes its helper, templates and references. It works after the kit checkout is removed. The installer uses ordinary files rather than symlinks, so another laptop does not need this checkout at the same path.
 
+Version 0.3 also bundles the local library helper, bibliography and workflow inside each technical-research copy (`long-session` and `design` profiles). The bibliography is metadata only; PDFs remain separate. [Fresh-laptop and existing-install instructions](library-setup.md).
+
 The manifest records file integrity at installation, not authenticity or future correctness. It excludes its own hash. The installer does not modify `.gitignore`; decide which project notes/configurations should be tracked after reviewing their contents. Nothing is committed or pushed automatically.
 
 ## Discovery
@@ -39,4 +41,4 @@ No automatic upgrades or uninstall are provided. The design profile is an additi
 
 Version 0.1 installed up to four skills. Updating the kit checkout does not update copied project skills. Run `install --profile design --provider both` first as a preview, then with `--apply`, to add the three new skills without replacing the earlier copies. Existing base setup text may still describe four skills; the design add-on's setup record describes the additions.
 
-A fresh version 0.2 long-session install includes all seven. Running the design add-on again against it will conflict with the already-installed skill directories. Repeated installs and installing a second provider after creating the same profile manifest are not upgrades; choose `--provider both` initially when both are needed. No global skills are installed or removed.
+A fresh version 0.2 or later long-session install includes all seven. Running the design add-on again against it will conflict with the already-installed skill directories. Repeated installs and installing a second provider after creating the same profile manifest are not upgrades; choose `--provider both` initially when both are needed. No global skills are installed or removed.

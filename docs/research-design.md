@@ -48,4 +48,6 @@ A proposal is not a human-approved decision; a possible downside is not an accep
 
 For short builds, focus on one blocking uncertainty, one compact design and one review pass if needed. For longer work, preserve evidence links and resume from the checkpoint; revisit assumptions when requirements or versions change. Use exact local/library versions and current primary sources when browsing is allowed. If offline, use supplied material and explicitly state the coverage limit.
 
+For book-backed research, version 0.3 includes a complete bibliography and local PDF helper inside technical-research. [Library setup](library-setup.md) explains private source access, bounded page reading and citations. The books themselves are not included. The [topic map](../skills/technical-research/references/library-workflow.md) connects likely engineering questions to candidate chapters; it does not claim that every chapter has been read.
+
 There is no exhaustive-options guarantee. Compare the options that can change the actual decision. A skill should help you explain the mechanism yourself; it does not establish correctness or replace independent checks of implementation.

@@ -8,3 +8,6 @@ notes/
 build-notes/
 .agent-kit/
 dist/
+.local-context/
+*.[pP][dD][fF]
+*.[eE][pP][uU][bB]
