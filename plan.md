@@ -72,7 +72,9 @@ The owner explicitly confirmed redistribution permission, then changed the publi
 - [x] Verify and inventory every available PDF; retain empty-source omissions explicitly.
 - [x] Extract page-aware text and create embeddings locally with a pinned model.
 - [x] Add offline semantic retrieval, dependency-free keyword retrieval, integrity checks and setup instructions.
-- [ ] Independently review the derived corpus and tools, then publish a draft PR.
-- [ ] Update main after explicit approval of the derived-library PR.
+- [x] Independently review the derived corpus and tools, then publish a draft PR.
+- [ ] Obtain explicit approval before merging the derived-library PR into main.
 
 Local build: 24,603 passages from all 251 nonempty PDFs, 7,754 extracted pages, 7,711 indexed pages, 43 pages without text, 11 empty source files. Zero extraction failures and zero network attempts during the complete build. All 124 tests and corpus integrity checks passed. See docs/index-review.md for scope and every changed path.
+
+Public review: https://github.com/DerekW00/agent-build-kit/pull/4. A credential-free public download at `2fb4466` passed corpus integrity, dependency-free keyword search and fresh both-provider installation checks. No raw PDF or release asset was uploaded. The earlier catalog-only PR #3 was merged before this derived-corpus update.
