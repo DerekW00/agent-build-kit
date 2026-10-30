@@ -55,9 +55,11 @@ October 29 evidence: the correction starts from `main` at `6c2909d`. All 68 test
 - [x] Bundle local search and bounded PDF extraction with technical-research for both providers.
 - [x] Write fresh-laptop setup, existing-install guidance and decision-linked research examples.
 - [x] Run independent adversarial review, repository checks and standalone installation checks.
-- [ ] Publish the reviewed feature branch and attach a draft PR.
-- [ ] Merge only after explicit approval for this PR.
+- [x] Publish the reviewed feature branch and attach a draft PR.
+- [ ] Obtain explicit approval before merging this PR.
 
 The library catalog is a dated bibliographic snapshot, not a claim that every source was read or can be redistributed. Books remain outside this public repository. No interview records or personal configurations are included.
 
 Verification: 87 tests, compilation, whitespace checks, source-library scan, bounded real PDF extraction and independent adversarial review passed. The optional external skill validator was unavailable; see docs/library-review.md for exact scope, limitations and changed paths.
+
+Public review: https://github.com/DerekW00/agent-build-kit/pull/3. A credential-free public clone at `12f238e` passed all 87 tests and verified both standalone installed bundles after removing the checkout. This publication does not update `main` or previously installed project copies by itself.
