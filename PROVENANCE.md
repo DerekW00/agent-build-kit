@@ -6,4 +6,6 @@ The Build Journal helper, skill, templates, references and regression tests were
 
 Third-party skills and tool implementations are not copied into this repository. Links in `docs/tools.md` identify reviewed primary sources, not bundled dependencies or endorsements. Installing an upstream tool later is a separate action under its own terms and version.
 
+The version 0.3 library extension contains original research instructions, a Python helper and synthetic tests. Its explicitly reviewed public bibliography contains book/chapter filenames, library-relative lookup paths and empty/nonempty status from the owner's October 29, 2026 library inventory. It includes no PDFs, EPUBs, extracted book text, private absolute paths, cloud manifests, personal configuration or interview records. Titles remain attributable to their respective authors/publishers; the bibliography grants no rights to the underlying books. The topic map is a selection aid, not a source-verified summary of every chapter. `pdftotext` is an optional separately installed dependency, not bundled code.
+
 Public availability does not establish permission to import the kit into an assessment. Review instructions and examples before reuse. The original methods reduce bookkeeping; they do not guarantee model faithfulness, interview performance or correctness beyond the checks actually run.

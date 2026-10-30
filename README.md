@@ -4,6 +4,8 @@ A small, project-local workflow for **Claude Code and Codex**: scope a build, re
 
 **Build Journal is included in this repository**: its Claude/Codex skill, Python helper, decision templates and references. You only need to download Agent Build Kit.
 
+**Reading-library support is included too**: a complete reviewed bibliography, topic map, local PDF search/extraction helper and decision-linked research workflow. [Set up your library on this or another laptop](docs/library-setup.md). The catalog covers all 262 visible PDFs in the source snapshot; book bodies stay in your authorized private library.
+
 Python 3.9+ is the only installer dependency. No package installation, credentials, model calls, global settings, hooks or background services are added. The same skill content is copied to each provider's documented project location.
 
 ## One-repository setup, including Build Journal
@@ -64,6 +66,8 @@ Open the **target project**, then start a new session if skills are not discover
 
 See [research and design usage](docs/research-design.md) for copyable prompts, outputs and selection rules.
 
+For local books, use `/technical-research` or `$technical-research` with the library's path and one engineering question. The updated skill selects relevant chapters, reads the needed pages, compares options and proposes a check. It reports missing sources and citation gaps. [Book workflow and topic map](skills/technical-research/references/library-workflow.md) · [Full bibliography](skills/technical-research/references/library-catalog.md).
+
 Example prompt in an AI-permitted session:
 
 > Use build-session to implement the task below. Keep a brief build journal in notes/. Record consequential choices, credible alternatives, actual reasons and observed checks. Leave unknowns explicit. Verify the working slice before expanding. End with a reproducible demo and a short presentation outline linked to the notes. Task: …
@@ -114,8 +118,8 @@ Run the kit checks:
 
 ```sh
 python3 -m unittest discover -s tests -v
-python3 -m compileall -q kit.py skills/build-journal/journal.py
+python3 -m compileall -q kit.py skills/build-journal/journal.py skills/technical-research/scripts/library.py
 git diff --check
 ```
 
-[Observed verification and limitations](docs/verification.md) · [Provenance](PROVENANCE.md).
+[Observed verification and limitations](docs/verification.md) · [Library extension review](docs/library-review.md) · [Provenance](PROVENANCE.md).
