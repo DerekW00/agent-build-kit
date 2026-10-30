@@ -4,7 +4,7 @@ Snapshot: **2026-10-29**. This is a reviewed bibliography and local-file lookup 
 
 Only filenames, relative locations and empty/nonempty status were checked for this catalog. **Nonempty does not mean readable, complete, current or content-verified.** Titles and edition labels here come from filenames or collection names; verify them against the source before citing. In particular, check draft/Early Release labels in *Evals for AI Engineers*. Files with abbreviated identifiers remain unidentified.
 
-Paths below are relative to your own library root. The books are **not bundled**. Obtain local access through your own authorized copies. A catalog entry does not establish permission to redistribute a book or import it into an assessment.
+Paths below identify the original PDFs relative to their library root. Raw PDFs are **not bundled**. The kit's separate `library/` corpus contains locally extracted passages and embeddings; check its `index.json` for actual extraction coverage. A catalog entry alone is not content evidence and does not establish permission to import materials into an assessment.
 
 Coverage: visible, regular `.pdf` files only; hidden folders/files, symlinks and non-PDF artifacts are excluded. One hidden export artifact under `.invalid/` is outside this catalog. Empty-file causes were not investigated. No book text, personal absolute paths or credentials are included.
 

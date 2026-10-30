@@ -13,6 +13,8 @@ Every Build Journal copy includes its helper, templates and references. It works
 
 Version 0.3 also bundles the local library helper, bibliography and workflow inside each technical-research copy (`long-session` and `design` profiles). The bibliography is metadata only; PDFs remain separate. [Fresh-laptop and existing-install instructions](library-setup.md).
 
+Version 0.4 adds a prepared text/embedding corpus under the downloaded repository's `library/` folder. The installer does not duplicate this dataset into either provider's skill directory. Keep the checkout and supply its library path when using it. Keyword search uses standard Python; optional semantic search has its own isolated dependencies and cached model. No raw PDFs are committed.
+
 The manifest records file integrity at installation, not authenticity or future correctness. It excludes its own hash. The installer does not modify `.gitignore`; decide which project notes/configurations should be tracked after reviewing their contents. Nothing is committed or pushed automatically.
 
 ## Discovery

@@ -236,7 +236,7 @@ class LibraryTests(unittest.TestCase):
         self.addCleanup(sys.path.remove, str(ROOT))
         import kit
         source = self.base / "source"
-        shutil.copytree(ROOT, source, ignore=shutil.ignore_patterns(".git", "__pycache__", "*.pyc"))
+        shutil.copytree(ROOT, source, ignore=shutil.ignore_patterns(".git", ".venv", "__pycache__", "*.pyc"))
         project = self.base / "project"
         project.mkdir()
         kit.apply_plan(kit.build_plan(project, "both", "long-session", source_root=source))
