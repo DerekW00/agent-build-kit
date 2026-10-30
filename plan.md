@@ -63,3 +63,18 @@ The library catalog is a dated bibliographic snapshot, not a claim that every so
 Verification: 87 tests, compilation, whitespace checks, source-library scan, bounded real PDF extraction and independent adversarial review passed. The optional external skill validator was unavailable; see docs/library-review.md for exact scope, limitations and changed paths.
 
 Public review: https://github.com/DerekW00/agent-build-kit/pull/3. A credential-free public clone at `12f238e` passed all 87 tests and verified both standalone installed bundles after removing the checkout. Previously installed project copies require the documented fresh-install or explicit-file workflow; a repository update does not overwrite them.
+
+## Prepared text and embeddings — October 29, 2026
+
+The owner explicitly confirmed redistribution permission, then changed the publication request to locally extracted text and embeddings only. No raw PDFs or release archives were uploaded. The extraction and embedding pipeline runs locally; publish only the derived search corpus, provenance, and portable tools in this same public repository.
+
+- [x] Confirm the library extension PR is merged and inspect source sizes.
+- [x] Verify and inventory every available PDF; retain empty-source omissions explicitly.
+- [x] Extract page-aware text and create embeddings locally with a pinned model.
+- [x] Add offline semantic retrieval, dependency-free keyword retrieval, integrity checks and setup instructions.
+- [x] Independently review the derived corpus and tools, then publish a draft PR.
+- [x] Obtain explicit approval before merging the derived-library PR into main (October 29, 2026).
+
+Local build: 24,603 passages from all 251 nonempty PDFs, 7,754 extracted pages, 7,711 indexed pages, 43 pages without text, 11 empty source files. Zero extraction failures and zero network attempts during the complete build. All 124 tests and corpus integrity checks passed. See docs/index-review.md for scope and every changed path.
+
+Public review: https://github.com/DerekW00/agent-build-kit/pull/4. A credential-free public download at `2fb4466` passed corpus integrity, dependency-free keyword search and fresh both-provider installation checks. No raw PDF or release asset was uploaded. The earlier catalog-only PR #3 was merged before this derived-corpus update.

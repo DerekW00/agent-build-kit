@@ -4,7 +4,7 @@ A small, project-local workflow for **Claude Code and Codex**: scope a build, re
 
 **Build Journal is included in this repository**: its Claude/Codex skill, Python helper, decision templates and references. You only need to download Agent Build Kit.
 
-**Reading-library support is included too**: a complete reviewed bibliography, topic map, local PDF search/extraction helper and decision-linked research workflow. [Set up your library on this or another laptop](docs/library-setup.md). The catalog covers all 262 visible PDFs in the source snapshot; book bodies stay in your authorized private library.
+**A searchable reading library is included too**: locally extracted passages, precomputed embeddings, keyword/semantic search, source/page references and a complete bibliography. No raw PDFs are uploaded. [Set up the included library on this or another laptop](docs/library-setup.md). Keyword search works with Python alone; semantic search uses an optional local model.
 
 Python 3.9+ is the only installer dependency. No package installation, credentials, model calls, global settings, hooks or background services are added. The same skill content is copied to each provider's documented project location.
 
@@ -66,7 +66,7 @@ Open the **target project**, then start a new session if skills are not discover
 
 See [research and design usage](docs/research-design.md) for copyable prompts, outputs and selection rules.
 
-For local books, use `/technical-research` or `$technical-research` with the library's path and one engineering question. The updated skill selects relevant chapters, reads the needed pages, compares options and proposes a check. It reports missing sources and citation gaps. [Book workflow and topic map](skills/technical-research/references/library-workflow.md) · [Full bibliography](skills/technical-research/references/library-catalog.md).
+For the prepared library, use `/technical-research` or `$technical-research` with the downloaded kit's `library/` path and one engineering question. The updated skill selects relevant chapters, reads the needed pages, compares options and proposes a check. It reports missing sources and citation gaps. [Book workflow and topic map](skills/technical-research/references/library-workflow.md) · [Full bibliography](skills/technical-research/references/library-catalog.md).
 
 Example prompt in an AI-permitted session:
 
@@ -76,7 +76,7 @@ For an existing build, invoke only the skill you need. For example, `/build-jour
 
 ### Bundled Build Journal
 
-The complete bundle is in `skills/build-journal/`. Installation copies its helper, templates and references together. After installation, you can remove the downloaded kit checkout; the project copy remains usable.
+The complete bundle is in `skills/build-journal/`. Installation copies its helper, templates and references together. After installation, the journal copy remains usable without the downloaded checkout. Keep the checkout if you use its separate `library/` search corpus.
 
 In an AI-permitted session, ask `/build-journal` in Claude Code or `$build-journal` in Codex to keep notes in `notes/`. It records:
 
@@ -122,4 +122,4 @@ python3 -m compileall -q kit.py skills/build-journal/journal.py skills/technical
 git diff --check
 ```
 
-[Observed verification and limitations](docs/verification.md) · [Library extension review](docs/library-review.md) · [Provenance](PROVENANCE.md).
+[Observed verification and limitations](docs/verification.md) · [Library extension review](docs/library-review.md) · [Prepared index review](docs/index-review.md) · [Provenance](PROVENANCE.md).

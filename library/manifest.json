@@ -1,0 +1,2583 @@
+{
+  "schema_version": 1,
+  "source_observed_date": "2026-10-29",
+  "redistribution": {
+    "status": "source_owner_confirmed",
+    "independent_license_audit": false
+  },
+  "scope": "Visible regular source PDFs; hidden entries and symlinks excluded. Raw PDFs are not published. Empty sources are listed but cannot contribute extracted text.",
+  "verification_scope": "Source SHA-256 identifies originals used for local extraction; originals are not bundled. PDF parse checks do not prove complete text extraction or visual fidelity. Derived-artifact integrity and coverage live in index.json.",
+  "counts": {
+    "pdf_entries": 262,
+    "available": 251,
+    "source_empty": 11,
+    "total_bytes": 444198292
+  },
+  "entries": [
+    {
+      "path": "Books/Algorithms For Interviews.pdf",
+      "bytes": 0,
+      "status": "source_empty"
+    },
+    {
+      "path": "Books/book-cal-career-workbook.pdf",
+      "bytes": 0,
+      "status": "source_empty"
+    },
+    {
+      "path": "Books/book-code-complete-2ed-mcconnell.pdf",
+      "bytes": 0,
+      "status": "source_empty"
+    },
+    {
+      "path": "Books/book-competitive-programmers-handbook.pdf",
+      "bytes": 0,
+      "status": "source_empty"
+    },
+    {
+      "path": "Books/book-cracking-coding-interview-laakmann.pdf",
+      "bytes": 181090220,
+      "status": "available",
+      "sha256": "fb3ca3f47c8812615d2e6955c4e96d8348c132527cf5395fec78c3bca7354546",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 708
+      }
+    },
+    {
+      "path": "Books/book-cracking-tech-career-laakmann.pdf",
+      "bytes": 0,
+      "status": "source_empty"
+    },
+    {
+      "path": "Books/book-csapp-computer-systems.pdf",
+      "bytes": 0,
+      "status": "source_empty"
+    },
+    {
+      "path": "Books/book-ctci-section4-supplement.pdf",
+      "bytes": 0,
+      "status": "source_empty"
+    },
+    {
+      "path": "Books/book-effective-python-slatkin.pdf",
+      "bytes": 0,
+      "status": "source_empty"
+    },
+    {
+      "path": "Books/book-fluent-python-ramalho.pdf",
+      "bytes": 0,
+      "status": "source_empty"
+    },
+    {
+      "path": "Books/book-python-cookbook-beazley.pdf",
+      "bytes": 0,
+      "status": "source_empty"
+    },
+    {
+      "path": "Books/Coding Interviews.pdf",
+      "bytes": 0,
+      "status": "source_empty"
+    },
+    {
+      "path": "papers/01 - Preface _ Fundamentals of Software Architecture, 2nd Edition.pdf",
+      "bytes": 109363,
+      "status": "available",
+      "sha256": "97be1d2b96eaa18564103fb4aab107d6fcef6139ebad719107aeae721f0e760e",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 7
+      }
+    },
+    {
+      "path": "papers/2601.10825v1.pdf",
+      "bytes": 8892952,
+      "status": "available",
+      "sha256": "ac2fce53f3c08fececb5d73cf9f0e11fd83fd37fc48c06e7c2a11a5849dc55db",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 112
+      }
+    },
+    {
+      "path": "technical-reads/ai agent - the definiative guide/1. From LLMs to Agents_ The Foundational Blueprint _ AI Agents_ The Definitive Guide.pdf",
+      "bytes": 1692702,
+      "status": "available",
+      "sha256": "73b8d836fa2ea9fb6f1b089934cc9792f47a5a54a8d3cd73d98d068877aa84b5",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 28
+      }
+    },
+    {
+      "path": "technical-reads/ai agent - the definiative guide/10. Agent Memory_ How Persistence Turns Agents into Evolving Systems _ AI Agents_ The Definitive Guide.pdf",
+      "bytes": 3085254,
+      "status": "available",
+      "sha256": "c0cad90980109ef077e4b45e38a9ee8c4aa61a75503b2d65b196a17bc4f6cce3",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 38
+      }
+    },
+    {
+      "path": "technical-reads/ai agent - the definiative guide/11. From Compute to Cost_ Designing Efficient Agentic Systems _ AI Agents_ The Definitive Guide.pdf",
+      "bytes": 2403462,
+      "status": "available",
+      "sha256": "edabca85baca3dde8ec2e2ac9dd941f1ad9f65231112b3390e24cd1b59e1cf6d",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 32
+      }
+    },
+    {
+      "path": "technical-reads/ai agent - the definiative guide/12. Threat Modeling for AI Agents _ AI Agents_ The Definitive Guide.pdf",
+      "bytes": 1460769,
+      "status": "available",
+      "sha256": "6274ce042deb28064f55da38e806e744b481dfdeff24787fc6f63a396ef7f893",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 30
+      }
+    },
+    {
+      "path": "technical-reads/ai agent - the definiative guide/2. Architectures and Patterns_ Planning, Reactivity, and Multi-Agent-Systems _ AI Agents_ The Definitive Guide.pdf",
+      "bytes": 2468272,
+      "status": "available",
+      "sha256": "87374cd641662bef4cb5595d52d1470227a9261eb62aa73b1bfad703143c7d0a",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 37
+      }
+    },
+    {
+      "path": "technical-reads/ai agent - the definiative guide/3. Advanced Planning, Reasoning, and Scalable Execution in Agents _ AI Agents_ The Definitive Guide.pdf",
+      "bytes": 2529329,
+      "status": "available",
+      "sha256": "21eeb71635ad96420baf5d1df5bfadb0117508312bdefe490ffbd0643d842db7",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 41
+      }
+    },
+    {
+      "path": "technical-reads/ai agent - the definiative guide/4. Models Behind the Agents_ Capabilities and Optimization _ AI Agents_ The Definitive Guide.pdf",
+      "bytes": 999255,
+      "status": "available",
+      "sha256": "d57f6cef32cf0a81373e3cf47f244b6d462fe1ebeb3b505d30327a4399638820",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 28
+      }
+    },
+    {
+      "path": "technical-reads/ai agent - the definiative guide/5. From Prototypes to Production_ Contracts, Tools, and Reliable Execution _ AI Agents_ The Definitive Guide.pdf",
+      "bytes": 1613155,
+      "status": "available",
+      "sha256": "d7eab7fb6b6005aeb52d8258538c651fde4f314900a01b74f89c563e0194fbc2",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 30
+      }
+    },
+    {
+      "path": "technical-reads/ai agent - the definiative guide/6. Secure Execution and Tool Governance _ AI Agents_ The Definitive Guide.pdf",
+      "bytes": 1650937,
+      "status": "available",
+      "sha256": "761b24623ff9254abc6fb6e98313553eda9d5f69f237b676a1a53e29900d8321",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 28
+      }
+    },
+    {
+      "path": "technical-reads/ai agent - the definiative guide/7. Deploying Agents in Real Products _ AI Agents_ The Definitive Guide.pdf",
+      "bytes": 2302763,
+      "status": "available",
+      "sha256": "6467822088b8db2c755b26a270dea0025e47c4d3ebb5930223a5cbb470c8b659",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 39
+      }
+    },
+    {
+      "path": "technical-reads/ai agent - the definiative guide/8. Foundational Evaluation and Operational Observation of Agentic Systems _ AI Agents_ The Definitive Guide.pdf",
+      "bytes": 1527601,
+      "status": "available",
+      "sha256": "85448ab2bb537ed1660cec3299e4d48e346640d7cd826dad6acc44a4cec1ccc0",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 27
+      }
+    },
+    {
+      "path": "technical-reads/ai agent - the definiative guide/9. Customized and Advanced Evaluation of Agentic Systems _ AI Agents_ The Definitive Guide.pdf",
+      "bytes": 1526138,
+      "status": "available",
+      "sha256": "a09ef738ebc42781472e6ca0a7c177f3c2552e6281aec2a961642439bb3ced7c",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 29
+      }
+    },
+    {
+      "path": "technical-reads/ai eval/1. Introduction _ Evals for AI Engineers.pdf",
+      "bytes": 887337,
+      "status": "available",
+      "sha256": "0d778f1f2d48ca0a55ccc50e3bafd5f6a49302852e5db1682939b3dbaab4c376",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 16
+      }
+    },
+    {
+      "path": "technical-reads/ai eval/10. Interfaces for Human Review _ Evals for AI Engineers.pdf",
+      "bytes": 3816376,
+      "status": "available",
+      "sha256": "9cfe8f0bbdd55205a79a2877f3777465cc775a91b84c3a585a928324b6e4312a",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 21
+      }
+    },
+    {
+      "path": "technical-reads/ai eval/11. Data Analysis for Traces _ Evals for AI Engineers.pdf",
+      "bytes": 87982,
+      "status": "available",
+      "sha256": "0eec00b6e0815cef381d7dc62905dc885a0a7d3bca5c01c554a24e3526ca40be",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 7
+      }
+    },
+    {
+      "path": "technical-reads/ai eval/12. Improving LLM Agents _ Evals for AI Engineers.pdf",
+      "bytes": 340636,
+      "status": "available",
+      "sha256": "d5a75053c8dad3ecffd9953c6674397afbd4fdbf8e89af4f2b053cd0ef224e1d",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 17
+      }
+    },
+    {
+      "path": "technical-reads/ai eval/2. LLMs and Evaluation Basics _ Evals for AI Engineers.pdf",
+      "bytes": 653308,
+      "status": "available",
+      "sha256": "61dfa2f30b7854ca7865f6dcd68082dfe24119b3ad7c255d1cf0b0a3d795a006",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 16
+      }
+    },
+    {
+      "path": "technical-reads/ai eval/3. Error Analysis _ Evals for AI Engineers.pdf",
+      "bytes": 353716,
+      "status": "available",
+      "sha256": "46474d87edb1897f8fa30631371aa0ffbda35af9b6c72a8014803030ba1f9e9d",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 14
+      }
+    },
+    {
+      "path": "technical-reads/ai eval/4. Collaborative Evaluation Practices _ Evals for AI Engineers.pdf",
+      "bytes": 7034852,
+      "status": "available",
+      "sha256": "b7418af77a9ed5ef1b1612e96fc717f74a8f611bfb182a2f15580d7d2fbbc707",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 22
+      }
+    },
+    {
+      "path": "technical-reads/ai eval/5. Implementing Automated Evaluators _ Evals for AI Engineers.pdf",
+      "bytes": 1021062,
+      "status": "available",
+      "sha256": "77cb046155ef95516087133aef2df06cc652b10ad1f4a3e50f67915a0f85629d",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 30
+      }
+    },
+    {
+      "path": "technical-reads/ai eval/6. Evaluating Multi-Turn Conversations _ Evals for AI Engineers.pdf",
+      "bytes": 180626,
+      "status": "available",
+      "sha256": "ca270c56410ee3a89ef9c8dea62253a291617ac52890aeeb3c583094f68b80ee",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 10
+      }
+    },
+    {
+      "path": "technical-reads/ai eval/7. Evaluating Retrieval-Augmented Generation _ Evals for AI Engineers.pdf",
+      "bytes": 408275,
+      "status": "available",
+      "sha256": "dfa980913953cbaef91489fe80f4bdbae7ec8507465b35d72021110df9170fef",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 19
+      }
+    },
+    {
+      "path": "technical-reads/ai eval/8. Evaluating Tool Use and Complex Agents _ Evals for AI Engineers.pdf",
+      "bytes": 338637,
+      "status": "available",
+      "sha256": "3e46214c01f5acb638fb0abb9ef54eb7627456270ec1444323a0624703a26b8b",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 18
+      }
+    },
+    {
+      "path": "technical-reads/ai eval/9. Continuous Integration and Deployment for LLM Agents _ Evals for AI Engineers.pdf",
+      "bytes": 311251,
+      "status": "available",
+      "sha256": "39277a6b35c5b7ecb82689c730608206543227563123c18307ebb39a52d8df9d",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 15
+      }
+    },
+    {
+      "path": "technical-reads/ai performance/1. Introduction and AI System Overview _ AI Systems Performance Engineering.pdf",
+      "bytes": 376844,
+      "status": "available",
+      "sha256": "e10d7d65f92b65a28503c9e75b392902e324fe9d21147c892cffad6850710fa6",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 29
+      }
+    },
+    {
+      "path": "technical-reads/ai performance/10. Intra-Kernel Pipelining, Warp Specialization, and Cooperative Thread Block Clusters _ AI Systems Performance Engineering.pdf",
+      "bytes": 3334819,
+      "status": "available",
+      "sha256": "fb4f885fa5ae97142b6ecc5bd1aef23bf43ea8fad76a9d46d741140abaab5438",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 64
+      }
+    },
+    {
+      "path": "technical-reads/ai performance/11. Inter-Kernel Pipelining, Synchronization, and CUDA Stream-Ordered Memory Allocations _ AI Systems Performance Engineering.pdf",
+      "bytes": 3880168,
+      "status": "available",
+      "sha256": "49967fe4acc2cb991e1c6f110d161ceaaaa61fddfa00fd2a457246f49eb0f40b",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 62
+      }
+    },
+    {
+      "path": "technical-reads/ai performance/12. Dynamic Scheduling, CUDA Graphs, and Device-Initiated Kernel Orchestration _ AI Systems Performance Engineering.pdf",
+      "bytes": 2707623,
+      "status": "available",
+      "sha256": "2db557abb7f772ffd10a82b0a9105356a8c8a5ff44b22b7ac90e71ad117724df",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 52
+      }
+    },
+    {
+      "path": "technical-reads/ai performance/13. Profiling, Tuning, and Scaling PyTorch _ AI Systems Performance Engineering.pdf",
+      "bytes": 3939701,
+      "status": "available",
+      "sha256": "a6b59ae5a311f3b440480df5531cfe0cc047d8aeebc41d2a9f18761126607cef",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 95
+      }
+    },
+    {
+      "path": "technical-reads/ai performance/14. PyTorch Compiler, OpenAI Triton, and XLA Backends _ AI Systems Performance Engineering.pdf",
+      "bytes": 3320945,
+      "status": "available",
+      "sha256": "130db1a55f80508e2fcaf793af6eefdd96a2a82f4098859466cb9f2789335ec4",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 69
+      }
+    },
+    {
+      "path": "technical-reads/ai performance/15. Multinode Inference, Parallelism, Decoding, and Routing Optimizations _ AI Systems Performance Engineering.pdf",
+      "bytes": 1175791,
+      "status": "available",
+      "sha256": "8f74926a4aed20ff8f4879e1e9243285c2cc5601ec5a6c276deb2d4b5943a3e0",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 51
+      }
+    },
+    {
+      "path": "technical-reads/ai performance/16. Profiling, Debugging, and Tuning Inference at Scale _ AI Systems Performance Engineering.pdf",
+      "bytes": 1350736,
+      "status": "available",
+      "sha256": "ba6153072588d32dbb1d0248971e9ae4f23305a9fedd9818301aa4fda3e653a0",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 73
+      }
+    },
+    {
+      "path": "technical-reads/ai performance/17. Scaling Disaggregated Prefill and Decode for Inference _ AI Systems Performance Engineering.pdf",
+      "bytes": 1175232,
+      "status": "available",
+      "sha256": "23ffdadc0c79f21ca09fbdfc435f4a17e9d9b36ba68030a026c0947b74564a64",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 47
+      }
+    },
+    {
+      "path": "technical-reads/ai performance/18. Advanced Prefill-Decode and KV Cache Tuning _ AI Systems Performance Engineering.pdf",
+      "bytes": 1659906,
+      "status": "available",
+      "sha256": "f626de810466cbedec536883e5db1d8e293e160f5dde0530be97995e58d87e38",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 52
+      }
+    },
+    {
+      "path": "technical-reads/ai performance/19. Dynamic and Adaptive Inference Engine Optimizations _ AI Systems Performance Engineering.pdf",
+      "bytes": 3098362,
+      "status": "available",
+      "sha256": "98b1a612b4c4efd4b1ab9d14001eaa37a65d1cdcdd4023473037526167a28bfc",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 94
+      }
+    },
+    {
+      "path": "technical-reads/ai performance/2. AI System Hardware Overview _ AI Systems Performance Engineering.pdf",
+      "bytes": 2167988,
+      "status": "available",
+      "sha256": "b57e37610e2be5dc97fdb2f248f50d9a7d39c0952a66c167afa025e83659c54c",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 44
+      }
+    },
+    {
+      "path": "technical-reads/ai performance/20. AI-Assisted Performance Optimizations and Scaling Toward Multimillion GPU Clusters _ AI Systems Performance Engineering.pdf",
+      "bytes": 690836,
+      "status": "available",
+      "sha256": "8dd0ece4fa3ee4cdd93a9c6d3bf6c876a3dfa84fec0783e97e9b122114be601a",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 30
+      }
+    },
+    {
+      "path": "technical-reads/ai performance/3. OS, Docker, and Kubernetes Tuning for GPU-Based Environments _ AI Systems Performance Engineering.pdf",
+      "bytes": 1455696,
+      "status": "available",
+      "sha256": "922ad7cb23d590e711cb903eea00997b1b83e50d9965ed3fc2aae1f56e79af60",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 58
+      }
+    },
+    {
+      "path": "technical-reads/ai performance/4. Tuning Distributed Networking Communication _ AI Systems Performance Engineering.pdf",
+      "bytes": 2368111,
+      "status": "available",
+      "sha256": "2a55eb2434a0488fc82920c012824b4e433dde62d6ed9492324aec0601f4da3a",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 73
+      }
+    },
+    {
+      "path": "technical-reads/ai performance/5. GPU-Based Storage I_O Optimizations _ AI Systems Performance Engineering.pdf",
+      "bytes": 608160,
+      "status": "available",
+      "sha256": "edae67979b13ea804142ad02105b74d52ccf400a2fc64dc5294c2dc007c39e1e",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 38
+      }
+    },
+    {
+      "path": "technical-reads/ai performance/6. GPU Architecture, CUDA Programming, and Maximizing Occupancy _ AI Systems Performance Engineering.pdf",
+      "bytes": 2663409,
+      "status": "available",
+      "sha256": "22513c11e7dd8e1fb2bab17dec0f73800361d321702f4794c5a29ac217a6a557",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 58
+      }
+    },
+    {
+      "path": "technical-reads/ai performance/7. Profiling and Tuning GPU Memory Access Patterns _ AI Systems Performance Engineering.pdf",
+      "bytes": 3450072,
+      "status": "available",
+      "sha256": "596ccbfeb6e7adf0674b0889d5dab79d7d487a6be382f7acf1019a874f12e265",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 57
+      }
+    },
+    {
+      "path": "technical-reads/ai performance/8. Occupancy Tuning, Warp Efficiency, and Instruction-Level Parallelism _ AI Systems Performance Engineering.pdf",
+      "bytes": 2569964,
+      "status": "available",
+      "sha256": "ab7ce71bb896c5df3ee6d334a5bf8868fe03141b1f8519b20c1a056b9f0fef96",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 64
+      }
+    },
+    {
+      "path": "technical-reads/ai performance/9. Increasing CUDA Kernel Efficiency and Arithmetic Intensity _ AI Systems Performance Engineering.pdf",
+      "bytes": 1540721,
+      "status": "available",
+      "sha256": "ca15bc4d76d054edf939b7328203b5490473928af0e02a7423d8637051104a16",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 42
+      }
+    },
+    {
+      "path": "technical-reads/ai performance/Appendix. AI Systems Performance Checklist (175+ Items) _ AI Systems Performance Engineering.pdf",
+      "bytes": 418982,
+      "status": "available",
+      "sha256": "16730d73af71c8d02315336fe49355f75fba79ea73e988da8a3220c318985828",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 59
+      }
+    },
+    {
+      "path": "technical-reads/ai-engineering/1. Introduction to Building AI Applications with Foundation Models _ AI Engineering.pdf",
+      "bytes": 4757253,
+      "status": "available",
+      "sha256": "d63f432a3c5c0203d0c476dad0aa2ba88d50452144e8d98c58b7b196e84d1619",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 45
+      }
+    },
+    {
+      "path": "technical-reads/ai-engineering/10. AI Engineering Architecture and User Feedback _ AI Engineering.pdf",
+      "bytes": 7901122,
+      "status": "available",
+      "sha256": "96b28707ee48554d0dc2b2f2bcf1657cf704c55a7948343758b3a71f1ae7ea2a",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 53
+      }
+    },
+    {
+      "path": "technical-reads/ai-engineering/2. Understanding Foundation Models _ AI Engineering.pdf",
+      "bytes": 4051931,
+      "status": "available",
+      "sha256": "1666445226cf7490333350f6e05ba5da82cfaba07a29fea2ab7b0ddb681415bc",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 72
+      }
+    },
+    {
+      "path": "technical-reads/ai-engineering/3. Evaluation Methodology _ AI Engineering.pdf",
+      "bytes": 2452015,
+      "status": "available",
+      "sha256": "94df8082f1853dc83634743123befcaaa34913e1664da3d7490fe68953f5b3c6",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 35
+      }
+    },
+    {
+      "path": "technical-reads/ai-engineering/4. Evaluate AI Systems _ AI Engineering.pdf",
+      "bytes": 3165003,
+      "status": "available",
+      "sha256": "7fe9228b90931e32312c79a9af3e78714ce9285e1baf1e728e8d0d7c8aa2c95c",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 59
+      }
+    },
+    {
+      "path": "technical-reads/ai-engineering/5. Prompt Engineering _ AI Engineering.pdf",
+      "bytes": 5077425,
+      "status": "available",
+      "sha256": "b76c34d8cc9b05468ea03eb765a06ed7a011c54987ab13dff27e694407ee0955",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 46
+      }
+    },
+    {
+      "path": "technical-reads/ai-engineering/6. RAG and Agents _ AI Engineering.pdf",
+      "bytes": 3699906,
+      "status": "available",
+      "sha256": "ad0819b162717c44c2d56807b69d7aa88c2ff85741a9af505f2e16d22b856aec",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 62
+      }
+    },
+    {
+      "path": "technical-reads/ai-engineering/7. Finetuning _ AI Engineering.pdf",
+      "bytes": 1816367,
+      "status": "available",
+      "sha256": "13f967acbbb40d5794e0cf1a0feb0967f7c3555cafcb181567c657050f503846",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 48
+      }
+    },
+    {
+      "path": "technical-reads/ai-engineering/8. Dataset Engineering _ AI Engineering.pdf",
+      "bytes": 1570104,
+      "status": "available",
+      "sha256": "321b4755dfcddf5540e6377871ca4f1d9436983184428c6166da4d8bc60c7675",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 43
+      }
+    },
+    {
+      "path": "technical-reads/ai-engineering/9. Inference Optimization _ AI Engineering.pdf",
+      "bytes": 2292890,
+      "status": "available",
+      "sha256": "db5d6e00eb93a80c2ab4efa259eb51f5bb60c3f091f195730ef1d6abd1fff67d",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 55
+      }
+    },
+    {
+      "path": "technical-reads/ai-engineering/Epilogue _ AI Engineering.pdf",
+      "bytes": 46879,
+      "status": "available",
+      "sha256": "3ad68a609f84ea92a5efe0e82151dd6260dceed958376a04799308361a4f9600",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 2
+      }
+    },
+    {
+      "path": "technical-reads/ai-engineering/Preface _ AI Engineering.pdf",
+      "bytes": 183350,
+      "status": "available",
+      "sha256": "9aadd9faef42dc3b2c486d0f6b1e4e4f820fd6b69333e7bd40326763a105fe86",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 15
+      }
+    },
+    {
+      "path": "technical-reads/Crafting Engineering Strategy/01 - Preface _ Crafting Engineering Strategy.pdf",
+      "bytes": 85478,
+      "status": "available",
+      "sha256": "0f4c0dab6281a5947b2bbb689f25f74232191e457db9ad1e06dc052bddecca09",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 6
+      }
+    },
+    {
+      "path": "technical-reads/Crafting Engineering Strategy/02 - I. Introducing Engineering Strategy _ Crafting Engineering Strategy.pdf",
+      "bytes": 24822,
+      "status": "available",
+      "sha256": "701df5dda4cc4ef99706c7c4bb3208e4f8f6c784647837aa51186962d2a9cd51",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 1
+      }
+    },
+    {
+      "path": "technical-reads/Crafting Engineering Strategy/03 - 1. Introduction _ Crafting Engineering Strategy.pdf",
+      "bytes": 64295,
+      "status": "available",
+      "sha256": "74b12014efff56748600ff1ad16baae2e80f2dbe1336f755229ddd1d92942f37",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 5
+      }
+    },
+    {
+      "path": "technical-reads/Crafting Engineering Strategy/04 - 2. Is Engineering Strategy Useful? _ Crafting Engineering Strategy.pdf",
+      "bytes": 133731,
+      "status": "available",
+      "sha256": "f88dbb63c893e009c47fe4734b48aef523f648c69112600e1944c55537766bd7",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 12
+      }
+    },
+    {
+      "path": "technical-reads/Crafting Engineering Strategy/05 - 3. Who Gets to Do Strategy? _ Crafting Engineering Strategy.pdf",
+      "bytes": 104135,
+      "status": "available",
+      "sha256": "13ffe23abc232e7a027d984790f743f9b946759798d09f55eee7678f230a84e1",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 7
+      }
+    },
+    {
+      "path": "technical-reads/Crafting Engineering Strategy/06 - 4. When Should You Write Strategy–and How Much? _ Crafting Engineering Strategy.pdf",
+      "bytes": 134587,
+      "status": "available",
+      "sha256": "85a03df0df1530262f8079cb3f746177d3cb8cc3b1bab43f8168d9414a184f66",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 10
+      }
+    },
+    {
+      "path": "technical-reads/Crafting Engineering Strategy/07 - II. Steps for Building Engineering Strategies _ Crafting Engineering Strategy.pdf",
+      "bytes": 24210,
+      "status": "available",
+      "sha256": "cc2d63b5bfe47f86c6c452b7217fc238ad476f3c8ac64e60b171a86cb95ce37f",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 1
+      }
+    },
+    {
+      "path": "technical-reads/Crafting Engineering Strategy/08 - 5. Steps to Build an Engineering Strategy _ Crafting Engineering Strategy.pdf",
+      "bytes": 200587,
+      "status": "available",
+      "sha256": "e5e38cb28f566006a4ed6b321bb71c97976aeea855806b0092ed6dd17508f990",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 9
+      }
+    },
+    {
+      "path": "technical-reads/Crafting Engineering Strategy/09 - 6. Exploring _ Crafting Engineering Strategy.pdf",
+      "bytes": 102168,
+      "status": "available",
+      "sha256": "8bc8da14f7ad3bc488b1e882ddda2fc19fb70b280e9afe216af9c5f874df80cb",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 7
+      }
+    },
+    {
+      "path": "technical-reads/Crafting Engineering Strategy/10 - 7. Diagnosis _ Crafting Engineering Strategy.pdf",
+      "bytes": 96270,
+      "status": "available",
+      "sha256": "ef42c3072e105b75dc2f7b01e752b6c35867d7b47c061a1caf2622f5a3d56dd0",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 9
+      }
+    },
+    {
+      "path": "technical-reads/Crafting Engineering Strategy/11 - 8. Refining _ Crafting Engineering Strategy.pdf",
+      "bytes": 201022,
+      "status": "available",
+      "sha256": "045e3007208ffa44ffdbe1763d451269a4411323b0dff7e03172257ee9e0e1da",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 9
+      }
+    },
+    {
+      "path": "technical-reads/Crafting Engineering Strategy/12 - 9. Setting Policy _ Crafting Engineering Strategy.pdf",
+      "bytes": 172096,
+      "status": "available",
+      "sha256": "0c3a627a027990b6f461ad7851d9fef23985a98c6122866deb92a654537086bd",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 16
+      }
+    },
+    {
+      "path": "technical-reads/Crafting Engineering Strategy/13 - 10. Operations _ Crafting Engineering Strategy.pdf",
+      "bytes": 166863,
+      "status": "available",
+      "sha256": "c340deefe36f069e553a15198bc91e6f72d98c4beb9cd4e53c49a49e6f999e21",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 15
+      }
+    },
+    {
+      "path": "technical-reads/Crafting Engineering Strategy/14 - 11. Writing Readable Engineering Strategies _ Crafting Engineering Strategy.pdf",
+      "bytes": 86719,
+      "status": "available",
+      "sha256": "1b67e461648a35aa197a2dc3563a9fbe550b81ed0e597427c4d5c77e202147bb",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 7
+      }
+    },
+    {
+      "path": "technical-reads/Crafting Engineering Strategy/15 - 12. Bridging Theory and Practice _ Crafting Engineering Strategy.pdf",
+      "bytes": 68464,
+      "status": "available",
+      "sha256": "0737a0aba7d92e50964600053ddb46c601ca73ffa85a45accae316ae2e9af3e8",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 6
+      }
+    },
+    {
+      "path": "technical-reads/Crafting Engineering Strategy/16 - III. Refinement Tools _ Crafting Engineering Strategy.pdf",
+      "bytes": 36061,
+      "status": "available",
+      "sha256": "3801bdc3c75c6fc826c977be2813814349911057da07d9335ea5095cc1772bb0",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 1
+      }
+    },
+    {
+      "path": "technical-reads/Crafting Engineering Strategy/17 - 13. Strategy Testing for Iterative Refinement _ Crafting Engineering Strategy.pdf",
+      "bytes": 97676,
+      "status": "available",
+      "sha256": "804a69a48bd80cc07f869d976d43603e119c1ca33fba29ec3d08465e90f2e060",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 8
+      }
+    },
+    {
+      "path": "technical-reads/Crafting Engineering Strategy/18 - 14. Systems Modeling _ Crafting Engineering Strategy.pdf",
+      "bytes": 307319,
+      "status": "available",
+      "sha256": "57157b57b0bd028790830725c5187e773d153f39d6ed8377aa91408bf736b3e0",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 10
+      }
+    },
+    {
+      "path": "technical-reads/Crafting Engineering Strategy/19 - 15. Wardley Maps _ Crafting Engineering Strategy.pdf",
+      "bytes": 330593,
+      "status": "available",
+      "sha256": "c8b6f31bf4d425cbd5433c1bbed5ae26d1bdc84eb1d9db0a50ac0917641ca703",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 13
+      }
+    },
+    {
+      "path": "technical-reads/Crafting Engineering Strategy/20 - IV. Case Studies _ Crafting Engineering Strategy.pdf",
+      "bytes": 25706,
+      "status": "available",
+      "sha256": "dbe51f3f0f0ec1522d86e8690be367723596650bff1cc3b26546bdf8cc6d40d1",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 1
+      }
+    },
+    {
+      "path": "technical-reads/Crafting Engineering Strategy/21 - 16. Service Migration Strategy _ Crafting Engineering Strategy.pdf",
+      "bytes": 2689122,
+      "status": "available",
+      "sha256": "1453e8e91100d8f1c9e1eabfc365052a9b9a6fc0b9e91f5acbc3e6066d45f0f5",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 25
+      }
+    },
+    {
+      "path": "technical-reads/Crafting Engineering Strategy/22 - 17. LLM Adoption Strategy _ Crafting Engineering Strategy.pdf",
+      "bytes": 2609094,
+      "status": "available",
+      "sha256": "74abe5a52f7fa3fdc7955fe2cd857b38e63a3c75b8b8e2b7decee61e79ff97fa",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 39
+      }
+    },
+    {
+      "path": "technical-reads/Crafting Engineering Strategy/23 - 18. Private Equity Ownership Strategy _ Crafting Engineering Strategy.pdf",
+      "bytes": 1685645,
+      "status": "available",
+      "sha256": "3d53a93b74625bba942424378dcd3ed83afa7b90d1b501d9ca0ddf453b776b19",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 18
+      }
+    },
+    {
+      "path": "technical-reads/Crafting Engineering Strategy/24 - 19. Customer Data Access Strategy _ Crafting Engineering Strategy.pdf",
+      "bytes": 101167,
+      "status": "available",
+      "sha256": "63aba421643e0bb3041b1021d72da432ba57de0d543b373f4656c1cffd10341d",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 8
+      }
+    },
+    {
+      "path": "technical-reads/Crafting Engineering Strategy/25 - 20. Service Architecture Strategy _ Crafting Engineering Strategy.pdf",
+      "bytes": 106344,
+      "status": "available",
+      "sha256": "b4bfab1bea4d7a08e17d1b369a86d8021a092fdd91a0806571ac3a2fdc02bb51",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 7
+      }
+    },
+    {
+      "path": "technical-reads/Crafting Engineering Strategy/26 - 21. Product Engineering Strategy _ Crafting Engineering Strategy.pdf",
+      "bytes": 119355,
+      "status": "available",
+      "sha256": "69b46ea955833021b7dc6c26df2cd10f8e868b9bc1cae62e6c78e1e2288f20ac",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 10
+      }
+    },
+    {
+      "path": "technical-reads/Crafting Engineering Strategy/27 - 22. Developer, API, and Acquisition Strategy at Stripe _ Crafting Engineering Strategy.pdf",
+      "bytes": 1572053,
+      "status": "available",
+      "sha256": "99929641e2bc5eea29c7d6cb75efb8c95c94df8a5473704db18a73264c78034f",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 21
+      }
+    },
+    {
+      "path": "technical-reads/Crafting Engineering Strategy/28 - V. Going Forward _ Crafting Engineering Strategy.pdf",
+      "bytes": 24186,
+      "status": "available",
+      "sha256": "155c8b571a08f84b0195ccedbe6111bccb5b752949ff0b95bfb50e07fa554a1b",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 1
+      }
+    },
+    {
+      "path": "technical-reads/Crafting Engineering Strategy/29 - 23. Is This Strategy Any Good? _ Crafting Engineering Strategy.pdf",
+      "bytes": 83965,
+      "status": "available",
+      "sha256": "7c9e6fb367fa57fcc6d168c100e408072e40b6e3b2cf43fac8b45b602cbb79cc",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 8
+      }
+    },
+    {
+      "path": "technical-reads/Crafting Engineering Strategy/30 - 24. How to Get Better at Strategy _ Crafting Engineering Strategy.pdf",
+      "bytes": 106896,
+      "status": "available",
+      "sha256": "408df0a889b14f6761be1c7d87ddd9eaae973896b7688154c4c5b5d9d20fb792",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 8
+      }
+    },
+    {
+      "path": "technical-reads/Crafting Engineering Strategy/31 - 25. Strategy Resources _ Crafting Engineering Strategy.pdf",
+      "bytes": 80377,
+      "status": "available",
+      "sha256": "97c8e51983a2554a9d2da38b8f4040eb4ec58d2b96bc69b471af324a32280f6d",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 4
+      }
+    },
+    {
+      "path": "technical-reads/Crafting Engineering Strategy/32 - Index _ Crafting Engineering Strategy.pdf",
+      "bytes": 917835,
+      "status": "available",
+      "sha256": "26bbc979802df74c6c3e2404c1c450a94af2be2881c3ff4363f383f7d247c669",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 26
+      }
+    },
+    {
+      "path": "technical-reads/Crafting Engineering Strategy/33 - About the Author _ Crafting Engineering Strategy.pdf",
+      "bytes": 38489,
+      "status": "available",
+      "sha256": "91c20e19e07cf32e75b0ea7844192252e9119e9f43870dad10b033e7a3fcb46a",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 1
+      }
+    },
+    {
+      "path": "technical-reads/Designing Data-Intensive Applications, 2nd Edition/01 - Preface _ Designing Data-Intensive Applications, 2nd Edition.pdf",
+      "bytes": 99695,
+      "status": "available",
+      "sha256": "2fe8d0ba1b88a2e6bfdac67eb83a9bff35a7867d6e2ddd421258255776b57dc0",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 8
+      }
+    },
+    {
+      "path": "technical-reads/Designing Data-Intensive Applications, 2nd Edition/02 - 1. Trade-Offs in Data Systems Architecture _ Designing Data-Intensive Applications, 2nd Edition.pdf",
+      "bytes": 664392,
+      "status": "available",
+      "sha256": "585497b0b2f1793dbb61892bec6a8995d276a88d25abeeeb3155cdf03ae8026c",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 40
+      }
+    },
+    {
+      "path": "technical-reads/Designing Data-Intensive Applications, 2nd Edition/03 - 2. Defining Nonfunctional Requirements _ Designing Data-Intensive Applications, 2nd Edition.pdf",
+      "bytes": 933067,
+      "status": "available",
+      "sha256": "a6f99ff863770293e410e171f640bd67dbfd9242b81ba303ddbda72e0f2f9f68",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 41
+      }
+    },
+    {
+      "path": "technical-reads/Designing Data-Intensive Applications, 2nd Edition/04 - 3. Data Models and Query Languages _ Designing Data-Intensive Applications, 2nd Edition.pdf",
+      "bytes": 2535113,
+      "status": "available",
+      "sha256": "6de505e68712be832cc1c0cb592a32adc131e47a652bc71a0aa7be013aa819b0",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 52
+      }
+    },
+    {
+      "path": "technical-reads/Designing Data-Intensive Applications, 2nd Edition/05 - 4. Storage and Retrieval _ Designing Data-Intensive Applications, 2nd Edition.pdf",
+      "bytes": 1804581,
+      "status": "available",
+      "sha256": "af532eefddd558d7297cfdf6206a5507225720843b55f22d188ba7ef742a9e1f",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 53
+      }
+    },
+    {
+      "path": "technical-reads/Designing Data-Intensive Applications, 2nd Edition/06 - 5. Encoding and Evolution _ Designing Data-Intensive Applications, 2nd Edition.pdf",
+      "bytes": 1236184,
+      "status": "available",
+      "sha256": "585d17215cae51907bedec8d7a8bb768360b4c9a246cfe374e2a9bf79276580f",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 39
+      }
+    },
+    {
+      "path": "technical-reads/Designing Data-Intensive Applications, 2nd Edition/07 - 6. Replication _ Designing Data-Intensive Applications, 2nd Edition.pdf",
+      "bytes": 1694256,
+      "status": "available",
+      "sha256": "488f72fb7e5f416c1f5eaaf9a1582d5cbad5acfede40851f196922b61192eeca",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 67
+      }
+    },
+    {
+      "path": "technical-reads/Designing Data-Intensive Applications, 2nd Edition/08 - 7. Sharding _ Designing Data-Intensive Applications, 2nd Edition.pdf",
+      "bytes": 1231112,
+      "status": "available",
+      "sha256": "7a9386237b8c184d17759a92fe92f2fb783a898abe98a4193cfeec75075e78e1",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 31
+      }
+    },
+    {
+      "path": "technical-reads/Designing Data-Intensive Applications, 2nd Edition/09 - 8. Transactions _ Designing Data-Intensive Applications, 2nd Edition.pdf",
+      "bytes": 2005322,
+      "status": "available",
+      "sha256": "131edd75bc7baa5f8511065a1bef6ca3708b265ac376588f1615ee176ff105d9",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 76
+      }
+    },
+    {
+      "path": "technical-reads/Designing Data-Intensive Applications, 2nd Edition/10 - 9. The Trouble with Distributed Systems _ Designing Data-Intensive Applications, 2nd Edition.pdf",
+      "bytes": 1432652,
+      "status": "available",
+      "sha256": "b6cacf67672b5715c3d1af058542d794b07eb310d4bd91ee4b119a72b6267c58",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 70
+      }
+    },
+    {
+      "path": "technical-reads/Designing Data-Intensive Applications, 2nd Edition/11 - 10. Consistency and Consensus _ Designing Data-Intensive Applications, 2nd Edition.pdf",
+      "bytes": 1316160,
+      "status": "available",
+      "sha256": "ba74dc2f60daea18a7c8cbbc7c0a66249b6157c17dd1f7c6b199cf1d0b0bf230",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 63
+      }
+    },
+    {
+      "path": "technical-reads/Designing Data-Intensive Applications, 2nd Edition/12 - 11. Batch Processing _ Designing Data-Intensive Applications, 2nd Edition.pdf",
+      "bytes": 961572,
+      "status": "available",
+      "sha256": "3fa9a6dbaaf98a957ccca21e1d5bdc46eb95536fbb6d86ce8ea02f7cc6d65f4d",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 39
+      }
+    },
+    {
+      "path": "technical-reads/Designing Data-Intensive Applications, 2nd Edition/13 - 12. Stream Processing _ Designing Data-Intensive Applications, 2nd Edition.pdf",
+      "bytes": 1274959,
+      "status": "available",
+      "sha256": "1aacbbb67d65373ccfa89e618043d764d826a338a47fdc148864cff22661aa70",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 65
+      }
+    },
+    {
+      "path": "technical-reads/Designing Data-Intensive Applications, 2nd Edition/14 - 13. A Philosophy of Streaming Systems _ Designing Data-Intensive Applications, 2nd Edition.pdf",
+      "bytes": 811715,
+      "status": "available",
+      "sha256": "03143381c9138007333184a61fb97df81c49e903e52ae995d4408620a8ce195f",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 58
+      }
+    },
+    {
+      "path": "technical-reads/Designing Data-Intensive Applications, 2nd Edition/15 - 14. Doing the Right Thing _ Designing Data-Intensive Applications, 2nd Edition.pdf",
+      "bytes": 352195,
+      "status": "available",
+      "sha256": "60da67aadf7e1e1996b09530450dfe394f17756dc554c10d9805fcccc0d0b7d5",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 22
+      }
+    },
+    {
+      "path": "technical-reads/Designing Data-Intensive Applications, 2nd Edition/16 - Glossary _ Designing Data-Intensive Applications, 2nd Edition.pdf",
+      "bytes": 176440,
+      "status": "available",
+      "sha256": "9c61baf6a826e604809cd52875aeec4229247827658282464886e87ffd8558a6",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 10
+      }
+    },
+    {
+      "path": "technical-reads/Designing Data-Intensive Applications, 2nd Edition/17 - Index _ Designing Data-Intensive Applications, 2nd Edition.pdf",
+      "bytes": 4981438,
+      "status": "available",
+      "sha256": "1b3d038e243c6e85d2e16608027c9dbe9c663ff51e549681e1cbb70bc0ffba81",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 118
+      }
+    },
+    {
+      "path": "technical-reads/Designing Data-Intensive Applications, 2nd Edition/18 - About the Authors _ Designing Data-Intensive Applications, 2nd Edition.pdf",
+      "bytes": 44519,
+      "status": "available",
+      "sha256": "b3e8779c4adf5801613b22566180c86c61cf09b634e106c831a059ae013a42e8",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 1
+      }
+    },
+    {
+      "path": "technical-reads/Effective Typescript.pdf",
+      "bytes": 7184547,
+      "status": "available",
+      "sha256": "55148f9fdb7bef4a13b8ec08a9bd346c6559ee3c4ee5c788e282271d9ad477d2",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 403
+      }
+    },
+    {
+      "path": "technical-reads/fundamentals of software/01 - Preface _ Fundamentals of Software Architecture, 2nd Edition.pdf",
+      "bytes": 109415,
+      "status": "available",
+      "sha256": "016f1e61d9631b61dc4cd15c255b98854b9c8b45452c2bfd184e23819b0425ac",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 7
+      }
+    },
+    {
+      "path": "technical-reads/fundamentals of software/02 - 1. Introduction _ Fundamentals of Software Architecture, 2nd Edition.pdf",
+      "bytes": 432430,
+      "status": "available",
+      "sha256": "0a894a83872f4f2e8c4f6329442f9624f04cfac7441fe06d530a3755ec09deff",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 15
+      }
+    },
+    {
+      "path": "technical-reads/fundamentals of software/03 - I. Foundations _ Fundamentals of Software Architecture, 2nd Edition.pdf",
+      "bytes": 22174,
+      "status": "available",
+      "sha256": "3e113cbe766769c5efccc529b2516dea8e50ec2c93d4a6d4a3e85dd287c0271f",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 1
+      }
+    },
+    {
+      "path": "technical-reads/fundamentals of software/04 - 2. Architectural Thinking _ Fundamentals of Software Architecture, 2nd Edition.pdf",
+      "bytes": 691239,
+      "status": "available",
+      "sha256": "7789d9aa0d1bfb3cac66afdead2e5f0dbb22af6245c8de63c404c07379715c3c",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 25
+      }
+    },
+    {
+      "path": "technical-reads/fundamentals of software/05 - 3. Modularity _ Fundamentals of Software Architecture, 2nd Edition.pdf",
+      "bytes": 493504,
+      "status": "available",
+      "sha256": "4c8966c3314fcc1f825c187b0e3412b4161bcd523137229f03ad45a72070c3e0",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 23
+      }
+    },
+    {
+      "path": "technical-reads/fundamentals of software/06 - 4. Architectural Characteristics Defined _ Fundamentals of Software Architecture, 2nd Edition.pdf",
+      "bytes": 244681,
+      "status": "available",
+      "sha256": "135724101caabce6e3a49310dc074e92f4358e07851e9c05c1f861f49a783e6a",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 17
+      }
+    },
+    {
+      "path": "technical-reads/fundamentals of software/07 - 5. Identifying Architectural Characteristics _ Fundamentals of Software Architecture, 2nd Edition.pdf",
+      "bytes": 219842,
+      "status": "available",
+      "sha256": "6122473f89e95c7c3abb5a025b279192b02244230a48e456c6ea7de9c54e9c4c",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 18
+      }
+    },
+    {
+      "path": "technical-reads/fundamentals of software/08 - 6. Measuring And Governing Architecture Characteristics _ Fundamentals of Software Architecture, 2nd Edition.pdf",
+      "bytes": 444494,
+      "status": "available",
+      "sha256": "ea4c3fd3e28a0a55e53d2ab32c5219b4b44a4b74ea1c548e716c0a3122685d9d",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 18
+      }
+    },
+    {
+      "path": "technical-reads/fundamentals of software/09 - 7. The Scope Of Architectural Characteristics _ Fundamentals of Software Architecture, 2nd Edition.pdf",
+      "bytes": 523506,
+      "status": "available",
+      "sha256": "43e815953ca986d67643a4bb497d0771132b830af711ec84353feaaf50586a0e",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 13
+      }
+    },
+    {
+      "path": "technical-reads/fundamentals of software/10 - 8. Component-Based Thinking _ Fundamentals of Software Architecture, 2nd Edition.pdf",
+      "bytes": 904442,
+      "status": "available",
+      "sha256": "1b08efb22fca4968dca57bb48bd7bb1c8b633070632d4b82d5579269b8fd4d30",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 27
+      }
+    },
+    {
+      "path": "technical-reads/fundamentals of software/11 - II. Architecture Styles _ Fundamentals of Software Architecture, 2nd Edition.pdf",
+      "bytes": 24966,
+      "status": "available",
+      "sha256": "938189fb51712146a6b7492e06cfdec684504b6c952273ff03a262f5f0bf1511",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 1
+      }
+    },
+    {
+      "path": "technical-reads/fundamentals of software/12 - 9. Foundations _ Fundamentals of Software Architecture, 2nd Edition.pdf",
+      "bytes": 1425070,
+      "status": "available",
+      "sha256": "04403536f2ca7af65b3ff3254d6b8551acf626894e86a3f3724ba0653267c1f0",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 27
+      }
+    },
+    {
+      "path": "technical-reads/fundamentals of software/13 - 10. Layered Architecture Style _ Fundamentals of Software Architecture, 2nd Edition.pdf",
+      "bytes": 424766,
+      "status": "available",
+      "sha256": "d97187f405c5cfa3348b192f70679164404420f7c39e9614a4ac54ea876698df",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 16
+      }
+    },
+    {
+      "path": "technical-reads/fundamentals of software/14 - 11. The Modular Monolith Architecture Style _ Fundamentals of Software Architecture, 2nd Edition.pdf",
+      "bytes": 681389,
+      "status": "available",
+      "sha256": "2f8b514637c2ef9690ea43e9046de55cc415c9e2aabba1192f00078d6d2505fb",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 18
+      }
+    },
+    {
+      "path": "technical-reads/fundamentals of software/15 - 12. Pipeline Architecture Style _ Fundamentals of Software Architecture, 2nd Edition.pdf",
+      "bytes": 451451,
+      "status": "available",
+      "sha256": "74a4c7effc979a26bf4df06e8bd6092a780657ddcdb908a4fa32cc7022b315c0",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 14
+      }
+    },
+    {
+      "path": "technical-reads/fundamentals of software/16 - 13. Microkernel Architecture Style _ Fundamentals of Software Architecture, 2nd Edition.pdf",
+      "bytes": 788197,
+      "status": "available",
+      "sha256": "bbdc8822fa8093b23830f3c4daa8744dfa896a0076f46ca66ceacf1562e12399",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 21
+      }
+    },
+    {
+      "path": "technical-reads/fundamentals of software/17 - 14. Service-Based Architecture Style _ Fundamentals of Software Architecture, 2nd Edition.pdf",
+      "bytes": 884271,
+      "status": "available",
+      "sha256": "0ab03eae61fa1b27b0ce96627d55f73780d877986cfca2167f9a03df847c1677",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 21
+      }
+    },
+    {
+      "path": "technical-reads/fundamentals of software/18 - 15. Event-Driven Architecture Style _ Fundamentals of Software Architecture, 2nd Edition.pdf",
+      "bytes": 3285287,
+      "status": "available",
+      "sha256": "59f69f00dd8cefeebb2cd425242be5557b1a375a88e00ad66425d4db5bd755c2",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 60
+      }
+    },
+    {
+      "path": "technical-reads/fundamentals of software/19 - 16. Space-Based Architecture Style _ Fundamentals of Software Architecture, 2nd Edition.pdf",
+      "bytes": 1308614,
+      "status": "available",
+      "sha256": "588084e59f8c5450ae482803981ac3920da4ae885d6b413c785c8262439453bd",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 35
+      }
+    },
+    {
+      "path": "technical-reads/fundamentals of software/20 - 17. Orchestration-Driven Service-Oriented Architecture _ Fundamentals of Software Architecture, 2nd Edition.pdf",
+      "bytes": 565466,
+      "status": "available",
+      "sha256": "fe651ce86999fd05cfecb09fa9f035ef9c8db4ea02741a4f91514f90a136ae8b",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 18
+      }
+    },
+    {
+      "path": "technical-reads/fundamentals of software/21 - 18. Microservices Architecture _ Fundamentals of Software Architecture, 2nd Edition.pdf",
+      "bytes": 1221253,
+      "status": "available",
+      "sha256": "9c3bcd4f8c91d532f7e70ab6bc0e0a61aa3c9ab25a85fe472469103c41be92dc",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 35
+      }
+    },
+    {
+      "path": "technical-reads/fundamentals of software/22 - 19. Choosing The Appropriate Architecture Style _ Fundamentals of Software Architecture, 2nd Edition.pdf",
+      "bytes": 512184,
+      "status": "available",
+      "sha256": "86ae83c3d8ed4b9164405c36ffdc249161d7fd73591c52ab168c9764af86a26e",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 16
+      }
+    },
+    {
+      "path": "technical-reads/fundamentals of software/23 - 20. Architectural Patterns _ Fundamentals of Software Architecture, 2nd Edition.pdf",
+      "bytes": 589516,
+      "status": "available",
+      "sha256": "db4426c74304fda59da2b6ed56a30ae1be9a93f2cd47b8f6763f7017b7bb5b48",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 16
+      }
+    },
+    {
+      "path": "technical-reads/fundamentals of software/24 - III. Techniques And Soft Skills _ Fundamentals of Software Architecture, 2nd Edition.pdf",
+      "bytes": 23320,
+      "status": "available",
+      "sha256": "b984118cdbd333e8b12ab9405c22233a22647538f00ad45ed8e183705ad3ded1",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 1
+      }
+    },
+    {
+      "path": "technical-reads/fundamentals of software/25 - 21. Architectural Decisions _ Fundamentals of Software Architecture, 2nd Edition.pdf",
+      "bytes": 419922,
+      "status": "available",
+      "sha256": "999b89946f2b3d637723cbbda4698ae523e33a193132722a83935d529a4b99b6",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 25
+      }
+    },
+    {
+      "path": "technical-reads/fundamentals of software/26 - 22. Analyzing Architecture Risk _ Fundamentals of Software Architecture, 2nd Edition.pdf",
+      "bytes": 952411,
+      "status": "available",
+      "sha256": "71aa7c9430142741eb4dd7505e96565027d1ad5be5b48246b374a8b6530a7636",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 21
+      }
+    },
+    {
+      "path": "technical-reads/fundamentals of software/27 - 23. Diagramming Architecture _ Fundamentals of Software Architecture, 2nd Edition.pdf",
+      "bytes": 327514,
+      "status": "available",
+      "sha256": "6b6872f26704bfc2f80723549d6672e8dc3f41ab503f29d11419489a8ecc4bc7",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 10
+      }
+    },
+    {
+      "path": "technical-reads/fundamentals of software/28 - 24. Making Teams Effective _ Fundamentals of Software Architecture, 2nd Edition.pdf",
+      "bytes": 3323224,
+      "status": "available",
+      "sha256": "2faacd5ed6ba3afc0403e61677dfe49d91164da42c016bb7d572cf409742c23a",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 26
+      }
+    },
+    {
+      "path": "technical-reads/fundamentals of software/29 - 25. Negotiation And Leadership Skills _ Fundamentals of Software Architecture, 2nd Edition.pdf",
+      "bytes": 3017233,
+      "status": "available",
+      "sha256": "f4da62e5e92d26d001b5e24f8d026402a84b54c2e0d91b93cd1969a1d9097307",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 22
+      }
+    },
+    {
+      "path": "technical-reads/fundamentals of software/30 - 26. Architectural Intersections _ Fundamentals of Software Architecture, 2nd Edition.pdf",
+      "bytes": 453462,
+      "status": "available",
+      "sha256": "9c21d460ca2e55e4b8bb479d15575bc2e4249744d5b38c98cf654e1ec4b4a8b0",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 22
+      }
+    },
+    {
+      "path": "technical-reads/fundamentals of software/31 - 27. The Laws Of Software Architecture, Revisited _ Fundamentals of Software Architecture, 2nd Edition.pdf",
+      "bytes": 253013,
+      "status": "available",
+      "sha256": "a3babad75dd3090d334c877e5148a3f6a75a4f4afa4f60dbd48d778f5da7266c",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 14
+      }
+    },
+    {
+      "path": "technical-reads/fundamentals of software/32 - Discussion Questions _ Fundamentals of Software Architecture, 2nd Edition.pdf",
+      "bytes": 165342,
+      "status": "available",
+      "sha256": "23a0610d60e8dc4c595fdeadb36cc0c7246ddbb8a96bdf73657dcdcbb80e2542",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 12
+      }
+    },
+    {
+      "path": "technical-reads/fundamentals of software/33 - Index _ Fundamentals of Software Architecture, 2nd Edition.pdf",
+      "bytes": 1595769,
+      "status": "available",
+      "sha256": "80fb0699143a0d914bc994e2a815d66de28148f70e7dded1266b0525c847605e",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 42
+      }
+    },
+    {
+      "path": "technical-reads/fundamentals of software/34 - About The Authors _ Fundamentals of Software Architecture, 2nd Edition.pdf",
+      "bytes": 39723,
+      "status": "available",
+      "sha256": "1eeab97b0afe425889a56764bf002d5d7051e6d62436141ee7bf38cf7e71c120",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 1
+      }
+    },
+    {
+      "path": "technical-reads/Observability Engineering 2nd Edition/01 - Foreword _ Observability Engineering, 2nd Edition.pdf",
+      "bytes": 43498,
+      "status": "available",
+      "sha256": "9d7fb3e534fe47f167fceb916134c0a63ed1a7f09531e5e7a61a765b16a1ffaf",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 3
+      }
+    },
+    {
+      "path": "technical-reads/Observability Engineering 2nd Edition/02 - Preface _ Observability Engineering, 2nd Edition.pdf",
+      "bytes": 176024,
+      "status": "available",
+      "sha256": "d8c03ff177cbd13a8712e489441ff4b256c84ccf0c7263d5d9c767c93a677bef",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 14
+      }
+    },
+    {
+      "path": "technical-reads/Observability Engineering 2nd Edition/03 - I. Introduction to Observability _ Observability Engineering, 2nd Edition.pdf",
+      "bytes": 30566,
+      "status": "available",
+      "sha256": "352b9d62952bed854e8e18182cedbe2e03d170fe6204280ab8ddb0116388d1d6",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 2
+      }
+    },
+    {
+      "path": "technical-reads/Observability Engineering 2nd Edition/04 - 1. What Is Observability? _ Observability Engineering, 2nd Edition.pdf",
+      "bytes": 456229,
+      "status": "available",
+      "sha256": "79472b2f850cf4687bd08314e3538c04fd3248abe2eeee64d2f9ed4c122ea177",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 22
+      }
+    },
+    {
+      "path": "technical-reads/Observability Engineering 2nd Edition/05 - 2. How Code Crosses Over: Validating Developer Intent in Production _ Observability Engineering, 2nd Edition.pdf",
+      "bytes": 208577,
+      "status": "available",
+      "sha256": "1265fd9c32d3e2ac019751187a64025ed888b81b0a7a2eb318ff5d96c71fdd76",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 26
+      }
+    },
+    {
+      "path": "technical-reads/Observability Engineering 2nd Edition/06 - 3. The Origins of Observability in Software _ Observability Engineering, 2nd Edition.pdf",
+      "bytes": 125068,
+      "status": "available",
+      "sha256": "5c3898cf027382655edd35f98bde4b697d5d02570f1a50f21dcd4b031ec89ad1",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 14
+      }
+    },
+    {
+      "path": "technical-reads/Observability Engineering 2nd Edition/07 - II. Instrumentation Fundamentals _ Observability Engineering, 2nd Edition.pdf",
+      "bytes": 32876,
+      "status": "available",
+      "sha256": "cab112d776219c8eceada7fc5dede928fabc3e19e3d8846801d57f3ffdddfc80",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 2
+      }
+    },
+    {
+      "path": "technical-reads/Observability Engineering 2nd Edition/08 - 4. Getting Started with Instrumentation _ Observability Engineering, 2nd Edition.pdf",
+      "bytes": 137103,
+      "status": "available",
+      "sha256": "89bc3cf8488a9f6035a6aa61d7f4021afb8c0c6373fc37e4855444c49becc733",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 17
+      }
+    },
+    {
+      "path": "technical-reads/Observability Engineering 2nd Edition/09 - 5. Structured Events Are the Building Blocks of Observability _ Observability Engineering, 2nd Edition.pdf",
+      "bytes": 570296,
+      "status": "available",
+      "sha256": "f27f8d5859ddfd67c9d20db30552cd52fbffb3fc4a101022335b0dab5a7454b7",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 28
+      }
+    },
+    {
+      "path": "technical-reads/Observability Engineering 2nd Edition/10 - 6. Making Structured Events Arbitrarily Wide _ Observability Engineering, 2nd Edition.pdf",
+      "bytes": 1484724,
+      "status": "available",
+      "sha256": "1cf187401d4ed703dde89e21d1b205db147c901525450b56ffcfa5b268b26faa",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 41
+      }
+    },
+    {
+      "path": "technical-reads/Observability Engineering 2nd Edition/11 - 7. Instrumenting Your Code with OpenTelemetry _ Observability Engineering, 2nd Edition.pdf",
+      "bytes": 302127,
+      "status": "available",
+      "sha256": "ce961c370fdf66a0a44efcf2cd5682d4678212c5c204f24c32ed0c4ce5ddc99b",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 25
+      }
+    },
+    {
+      "path": "technical-reads/Observability Engineering 2nd Edition/12 - III. Analysis Workflows _ Observability Engineering, 2nd Edition.pdf",
+      "bytes": 34710,
+      "status": "available",
+      "sha256": "4f3af2848c3a741e67ef3b78f98e53caddebfcc2880fb291a2b085c1a0d00c38",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 2
+      }
+    },
+    {
+      "path": "technical-reads/Observability Engineering 2nd Edition/13 - 8. Getting Started with Observability Analysis _ Observability Engineering, 2nd Edition.pdf",
+      "bytes": 477658,
+      "status": "available",
+      "sha256": "70e1eddf745612277642ef5fe133023dc9fc38845dc97b391fa0264673bfe77b",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 17
+      }
+    },
+    {
+      "path": "technical-reads/Observability Engineering 2nd Edition/14 - 9. Observability-Driven Development _ Observability Engineering, 2nd Edition.pdf",
+      "bytes": 170657,
+      "status": "available",
+      "sha256": "d0375be8f98be713ebf1e5bf986b1543a9619922d03809af9d858c48d89e5a59",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 15
+      }
+    },
+    {
+      "path": "technical-reads/Observability Engineering 2nd Edition/15 - 10. The Role of AI Agents for Observability _ Observability Engineering, 2nd Edition.pdf",
+      "bytes": 304695,
+      "status": "available",
+      "sha256": "809cec655fd2f87ae7b37a0d0a39e4f023793b591db97f1c57e1dd4eb43abcc5",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 15
+      }
+    },
+    {
+      "path": "technical-reads/Observability Engineering 2nd Edition/16 - 11. Using Service Level Objectives for Reliability _ Observability Engineering, 2nd Edition.pdf",
+      "bytes": 198425,
+      "status": "available",
+      "sha256": "ef4c738da3b10b6642f29de41dd45df7bddb23fd212d979e49e11b3f421f0ce0",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 24
+      }
+    },
+    {
+      "path": "technical-reads/Observability Engineering 2nd Edition/17 - IV. Observability Technical Deep Dives _ Observability Engineering, 2nd Edition.pdf",
+      "bytes": 37067,
+      "status": "available",
+      "sha256": "40daabeea24be651d178c30b985ddf926b61ebff58d732cc1a47b7f0c5356201",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 2
+      }
+    },
+    {
+      "path": "technical-reads/Observability Engineering 2nd Edition/18 - 12. Acting On and Debugging SLO-Based Alerts _ Observability Engineering, 2nd Edition.pdf",
+      "bytes": 599751,
+      "status": "available",
+      "sha256": "fc969975f4a310f59015f66b81583c632544addc51b99ae6447ba773d282ecdd",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 24
+      }
+    },
+    {
+      "path": "technical-reads/Observability Engineering 2nd Edition/19 - 13. Efficient Data Storage with Retriever _ Observability Engineering, 2nd Edition.pdf",
+      "bytes": 647558,
+      "status": "available",
+      "sha256": "4a1cb50349dde74de26d1ab7b9b6c0ea1d943769dea60233b420d73989bcf756",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 27
+      }
+    },
+    {
+      "path": "technical-reads/Observability Engineering 2nd Edition/20 - 14. Efficient Data Storage with ClickHouse _ Observability Engineering, 2nd Edition.pdf",
+      "bytes": 1336453,
+      "status": "available",
+      "sha256": "62d3eba16d15c2bb1af4ea578d6dbf7d5da21f1dbfeca05309d8d13a2e25b93d",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 39
+      }
+    },
+    {
+      "path": "technical-reads/Observability Engineering 2nd Edition/21 - 15. Cheap and Accurate Enough Sampling _ Observability Engineering, 2nd Edition.pdf",
+      "bytes": 332372,
+      "status": "available",
+      "sha256": "344f46d1e07aca0ef9e75d75140ee1a743bd748bb8c73f23620b63a055098121",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 21
+      }
+    },
+    {
+      "path": "technical-reads/Observability Engineering 2nd Edition/22 - 16. Telemetry Management with Pipelines _ Observability Engineering, 2nd Edition.pdf",
+      "bytes": 577613,
+      "status": "available",
+      "sha256": "923571f5a2f6afdbaf8d2696027472b4d581cbfb4a367ee939eaf24e11b1b0d3",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 24
+      }
+    },
+    {
+      "path": "technical-reads/Observability Engineering 2nd Edition/23 - 17. Ontologies as a Shared Language for Humans and AI _ Observability Engineering, 2nd Edition.pdf",
+      "bytes": 436263,
+      "status": "available",
+      "sha256": "1e7ce905ce2dd328a40fe2ad81b4790f0356af54f5d98ff0b8cf65cee5ca7680",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 18
+      }
+    },
+    {
+      "path": "technical-reads/Observability Engineering 2nd Edition/24 - V. Observability Use Cases _ Observability Engineering, 2nd Edition.pdf",
+      "bytes": 36513,
+      "status": "available",
+      "sha256": "bc488d28cb19619ccd7b85338285601b2d9cb6d2bc89ff0b9580d9fcbe377be7",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 2
+      }
+    },
+    {
+      "path": "technical-reads/Observability Engineering 2nd Edition/25 - 18. Observability for CI-CD Pipelines _ Observability Engineering, 2nd Edition.pdf",
+      "bytes": 175274,
+      "status": "available",
+      "sha256": "f17b72203033ac3c51dc5e87193754a75f72398190261e136b182d2aba904b1c",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 20
+      }
+    },
+    {
+      "path": "technical-reads/Observability Engineering 2nd Edition/26 - 19. Observability for Mobile and Frontend _ Observability Engineering, 2nd Edition.pdf",
+      "bytes": 211756,
+      "status": "available",
+      "sha256": "98565b756b8991a871ad7c77ca26611d86289bb4490a7b842ac5f7c437a74b0f",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 33
+      }
+    },
+    {
+      "path": "technical-reads/Observability Engineering 2nd Edition/27 - 20. Performance Engineering with Observability _ Observability Engineering, 2nd Edition.pdf",
+      "bytes": 1037092,
+      "status": "available",
+      "sha256": "0c170c2eaff2520dbfe004e90a683ff480ad46a1d78cc1a6f72d7bcb5c22e050",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 26
+      }
+    },
+    {
+      "path": "technical-reads/Observability Engineering 2nd Edition/28 - 21. Observability for Large Language Models _ Observability Engineering, 2nd Edition.pdf",
+      "bytes": 198513,
+      "status": "available",
+      "sha256": "ef3e0b0316140693b031716a204b941ed45569ea17e2f59419ae4188c2b330ca",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 16
+      }
+    },
+    {
+      "path": "technical-reads/Observability Engineering 2nd Edition/29 - 22. Fin’s Case Study in Modern Engineering _ Observability Engineering, 2nd Edition.pdf",
+      "bytes": 916363,
+      "status": "available",
+      "sha256": "e883d2fdcde86ec50483b7debb565a344ab055dcb6658ecc0f1cc9ead78f47da",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 16
+      }
+    },
+    {
+      "path": "technical-reads/Observability Engineering 2nd Edition/30 - VI. Observability Governance _ Observability Engineering, 2nd Edition.pdf",
+      "bytes": 43838,
+      "status": "available",
+      "sha256": "62bcf50ceea90099c36b0bb9511665d76d7ec94b7815299c78c1c9d1afe4512f",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 3
+      }
+    },
+    {
+      "path": "technical-reads/Observability Engineering 2nd Edition/31 - 23. Organizational Learning Speed Is Now Your Biggest Constraint: An Open Letter to CTOs _ Observability Engineering, 2nd Edition.pdf",
+      "bytes": 184942,
+      "status": "available",
+      "sha256": "0394bbbcf664dba9eaa4a90a2a924fee53560fc86d9d2d15b13a9dbf8d52d64c",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 21
+      }
+    },
+    {
+      "path": "technical-reads/Observability Engineering 2nd Edition/32 - 24. Systems Thinking for Software Delivery _ Observability Engineering, 2nd Edition.pdf",
+      "bytes": 575994,
+      "status": "available",
+      "sha256": "8ef44c553ea20db0aaa385e3e3e09c285b67e0146f7e4ca067413270ba4d5640",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 20
+      }
+    },
+    {
+      "path": "technical-reads/Observability Engineering 2nd Edition/33 - 25. The Observability Landscape Through a Systems Lens _ Observability Engineering, 2nd Edition.pdf",
+      "bytes": 441122,
+      "status": "available",
+      "sha256": "31618ebff2685fb573a8a5c8dff5f6e35fa6db9f4a8bf2083ee163e4def5b220",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 18
+      }
+    },
+    {
+      "path": "technical-reads/Observability Engineering 2nd Edition/34 - 26. The Business Case for Observability _ Observability Engineering, 2nd Edition.pdf",
+      "bytes": 186702,
+      "status": "available",
+      "sha256": "5da3a08966cae21adeb3043d0800d5fda4a1123e705ea9784fbbb70136add1a9",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 19
+      }
+    },
+    {
+      "path": "technical-reads/Observability Engineering 2nd Edition/35 - 27. Diagnosing Your Observability Investment _ Observability Engineering, 2nd Edition.pdf",
+      "bytes": 108839,
+      "status": "available",
+      "sha256": "64de040f4ae9e1639367dc1f06d439721d5534fba813e984245aee3d7c24096b",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 9
+      }
+    },
+    {
+      "path": "technical-reads/Observability Engineering 2nd Edition/36 - 28. The Organizational Shift _ Observability Engineering, 2nd Edition.pdf",
+      "bytes": 192195,
+      "status": "available",
+      "sha256": "f978d009a8dde79c99e595199905db818f026e42345caebc3f3a0687ab4c5d13",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 26
+      }
+    },
+    {
+      "path": "technical-reads/Observability Engineering 2nd Edition/37 - 29. Build Versus Buy (Versus Open Source) _ Observability Engineering, 2nd Edition.pdf",
+      "bytes": 475836,
+      "status": "available",
+      "sha256": "475621bb844ba4f5ccbdebb631ac55e22c425915edfbc88591ad06f89c4b059c",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 34
+      }
+    },
+    {
+      "path": "technical-reads/Observability Engineering 2nd Edition/38 - 30. The Art and Science of Vendor Partnerships _ Observability Engineering, 2nd Edition.pdf",
+      "bytes": 256748,
+      "status": "available",
+      "sha256": "591a6e74210b61d6c00afcf7e277f40a0c744ba8d43a1fedd528d0cb4bf7e729",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 33
+      }
+    },
+    {
+      "path": "technical-reads/Observability Engineering 2nd Edition/39 - 31. Instrumentation for Observability Teams _ Observability Engineering, 2nd Edition.pdf",
+      "bytes": 166332,
+      "status": "available",
+      "sha256": "c8f091db57ad04a0a18eae44aca42f399ae8326f96c30655a6ad6caded44274b",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 19
+      }
+    },
+    {
+      "path": "technical-reads/Observability Engineering 2nd Edition/40 - 32. Where Do We Go From Here? _ Observability Engineering, 2nd Edition.pdf",
+      "bytes": 118107,
+      "status": "available",
+      "sha256": "5e68b4e652497ca698eb14894c8ad3d5caf149091e3579b7f0ff557c57de3456",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 13
+      }
+    },
+    {
+      "path": "technical-reads/Observability Engineering 2nd Edition/41 - Index _ Observability Engineering, 2nd Edition.pdf",
+      "bytes": 2062370,
+      "status": "available",
+      "sha256": "09a964d91e547b97f8e1798d276d1141f46ae6325a0eaaf77e0e1f9da16024b8",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 52
+      }
+    },
+    {
+      "path": "technical-reads/Observability Engineering 2nd Edition/42 - About the Authors _ Observability Engineering, 2nd Edition.pdf",
+      "bytes": 49234,
+      "status": "available",
+      "sha256": "7fdc53cdb08ed2b8d47ecfa28897d24b15b7fbd4575a820c299afb94ee445ecb",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 2
+      }
+    },
+    {
+      "path": "technical-reads/osppv1.pdf",
+      "bytes": 2293053,
+      "status": "available",
+      "sha256": "87555c0016dde300008e71a8729bee62de3ecc38d568bd1cdaf9d450f8c687e8",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 164
+      }
+    },
+    {
+      "path": "technical-reads/osppv2.pdf",
+      "bytes": 3337701,
+      "status": "available",
+      "sha256": "2ef13ba8976bb1ff084e0f424620bdd6e3c227a426717e41924ea68a186fa078",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 285
+      }
+    },
+    {
+      "path": "technical-reads/osppv3.pdf",
+      "bytes": 2802774,
+      "status": "available",
+      "sha256": "de0c4ada426213a43c2e65bdacfa29535663504391745ec47fe8eafc7b91c9c8",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 162
+      }
+    },
+    {
+      "path": "technical-reads/osppv4.pdf",
+      "bytes": 4024157,
+      "status": "available",
+      "sha256": "9eb8a0fad574b3862d6e7d54df272208305ad23cac172846d3f75734a1ea7cc3",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 194
+      }
+    },
+    {
+      "path": "technical-reads/System Design Interview An Insider’s Guide by Alex Xu.pdf",
+      "bytes": 25834394,
+      "status": "available",
+      "sha256": "f2f8d58bc9d4b6b2fbf95f7e384b7dd8ac94b3995e300059b716ac0a87a33e43",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 269
+      }
+    },
+    {
+      "path": "technical-reads/The Product-Minded Engineer/01 - Preface _ The Product-Minded Engineer.pdf",
+      "bytes": 189995,
+      "status": "available",
+      "sha256": "3fcaedd66321f9155aadc58a1f19d6a83a70c97db89897557846c7502a71e3b9",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 11
+      }
+    },
+    {
+      "path": "technical-reads/The Product-Minded Engineer/02 - 1. The Foundations of Product Thinking _ The Product-Minded Engineer.pdf",
+      "bytes": 313961,
+      "status": "available",
+      "sha256": "fdfe78e9876465b02385a1caa9e9a4a0793d2514650f7fa602e5be8aaec78528",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 27
+      }
+    },
+    {
+      "path": "technical-reads/The Product-Minded Engineer/03 - I. Develop _ The Product-Minded Engineer.pdf",
+      "bytes": 24025,
+      "status": "available",
+      "sha256": "d6d815c58952a16f35f0a867df5f509b2e1b6ce3f3e251b7ae11e6b15e7b63df",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 1
+      }
+    },
+    {
+      "path": "technical-reads/The Product-Minded Engineer/04 - 2. Guiding Users Through Your Product _ The Product-Minded Engineer.pdf",
+      "bytes": 1195570,
+      "status": "available",
+      "sha256": "666cfffe261ed25529f5f3e82f4417e9db059e0d89f608cc212d19095ebd641c",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 30
+      }
+    },
+    {
+      "path": "technical-reads/The Product-Minded Engineer/05 - 3. Errors and Warnings _ The Product-Minded Engineer.pdf",
+      "bytes": 593670,
+      "status": "available",
+      "sha256": "71fafb4e7998cf3383de6d5e96a1f209488fa1e60d74d1cf0d1d81ff420cefc0",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 30
+      }
+    },
+    {
+      "path": "technical-reads/The Product-Minded Engineer/06 - II. Deliver _ The Product-Minded Engineer.pdf",
+      "bytes": 33213,
+      "status": "available",
+      "sha256": "b413ec493f91028d32855fe85847a7c3e8ee046f89c8c5396e07574a9f0c4d3f",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 2
+      }
+    },
+    {
+      "path": "technical-reads/The Product-Minded Engineer/07 - 4. Experiencing Your Own Product _ The Product-Minded Engineer.pdf",
+      "bytes": 409094,
+      "status": "available",
+      "sha256": "6f73f1e79f36f961fb62123ca95a43d6c0d1fa073739254e18b40795010a0961",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 31
+      }
+    },
+    {
+      "path": "technical-reads/The Product-Minded Engineer/08 - 5. Keeping Up with Users _ The Product-Minded Engineer.pdf",
+      "bytes": 355382,
+      "status": "available",
+      "sha256": "93b63684f074d85a90bfdbaa429cd64fce1b499007329a1c5f9f42165b73a19a",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 38
+      }
+    },
+    {
+      "path": "technical-reads/The Product-Minded Engineer/09 - III. Discover _ The Product-Minded Engineer.pdf",
+      "bytes": 23826,
+      "status": "available",
+      "sha256": "155f1688acec6c255b67d2a5fad5c2d24b398e1c4707afdc6401f50776f2bc85",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 1
+      }
+    },
+    {
+      "path": "technical-reads/The Product-Minded Engineer/10 - 6. Understanding Your Target Audience _ The Product-Minded Engineer.pdf",
+      "bytes": 468477,
+      "status": "available",
+      "sha256": "317473372c66c4d17020bd22dd0172e78a3b5b0a29ebbc2201fbe7bc1c027fee",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 37
+      }
+    },
+    {
+      "path": "technical-reads/The Product-Minded Engineer/11 - 7. Discovering Your Product Through Simulation _ The Product-Minded Engineer.pdf",
+      "bytes": 669677,
+      "status": "available",
+      "sha256": "acbf8eb8680f0b55ee6b3f2e63954b5d68dcdfbcedc0552bc3d5bbb64d9559da",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 46
+      }
+    },
+    {
+      "path": "technical-reads/The Product-Minded Engineer/12 - IV. Define _ The Product-Minded Engineer.pdf",
+      "bytes": 23294,
+      "status": "available",
+      "sha256": "095e54243b2910f761faab25d8fd2c069554d0ba1c99ad153479de654d3e2f12",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 1
+      }
+    },
+    {
+      "path": "technical-reads/The Product-Minded Engineer/13 - 8. Interaction Design _ The Product-Minded Engineer.pdf",
+      "bytes": 469937,
+      "status": "available",
+      "sha256": "f551490a974bd255bdc70680d805d2719fc2236b53d43854e73d09ccd0d8771c",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 29
+      }
+    },
+    {
+      "path": "technical-reads/The Product-Minded Engineer/14 - 9. Product Architecture _ The Product-Minded Engineer.pdf",
+      "bytes": 553401,
+      "status": "available",
+      "sha256": "13cff903664d4657ca34434d88d6d4d09ace5a051f92cbc4bd26813702aba3d7",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 32
+      }
+    },
+    {
+      "path": "technical-reads/The Product-Minded Engineer/15 - Index _ The Product-Minded Engineer.pdf",
+      "bytes": 1076469,
+      "status": "available",
+      "sha256": "7b96f453e46ab9af4e97f750993441c61beb80859adf1cf5de73814e3eddc159",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 28
+      }
+    },
+    {
+      "path": "technical-reads/The Product-Minded Engineer/16 - About the Author _ The Product-Minded Engineer.pdf",
+      "bytes": 26792,
+      "status": "available",
+      "sha256": "39cb11eb97737110b68888184ab9a3e851bb65c7596406f98b32ffd1615e9af2",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 1
+      }
+    },
+    {
+      "path": "technical-reads/Tidy First/01 - Foreword _ Tidy First?.pdf",
+      "bytes": 47553,
+      "status": "available",
+      "sha256": "9159006946027463cb32db7afeaa52019dcfebfc5edc19e2280ca12389887d96",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 3
+      }
+    },
+    {
+      "path": "technical-reads/Tidy First/02 - Preface _ Tidy First?.pdf",
+      "bytes": 887576,
+      "status": "available",
+      "sha256": "726b263eaece3d7b32b88e80f06e76ce46b392f0d996b690a0c4d37b565d5882",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 9
+      }
+    },
+    {
+      "path": "technical-reads/Tidy First/03 - Introduction _ Tidy First?.pdf",
+      "bytes": 39682,
+      "status": "available",
+      "sha256": "55c83ce4e0559100206e287eb7ff87da94fa79ea85f25d4a9a3f9e148482915f",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 3
+      }
+    },
+    {
+      "path": "technical-reads/Tidy First/04 - I. Tidyings _ Tidy First?.pdf",
+      "bytes": 32905,
+      "status": "available",
+      "sha256": "0922dd40231b682855c41a881df36000b23fdb60a0f8648b23603ef1b153b5fd",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 1
+      }
+    },
+    {
+      "path": "technical-reads/Tidy First/05 - 1. Guard Clauses _ Tidy First?.pdf",
+      "bytes": 56858,
+      "status": "available",
+      "sha256": "be1292ae54443477827b1d455730738232524fa179fe38127e61c64023832671",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 2
+      }
+    },
+    {
+      "path": "technical-reads/Tidy First/06 - 2. Dead Code _ Tidy First?.pdf",
+      "bytes": 37419,
+      "status": "available",
+      "sha256": "f719e5e597c338b3e360b1062e8e9c885f9a0396e7b098526b65f87404e03ba1",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 2
+      }
+    },
+    {
+      "path": "technical-reads/Tidy First/07 - 3. Normalize Symmetries _ Tidy First?.pdf",
+      "bytes": 46296,
+      "status": "available",
+      "sha256": "9317f95cc209e17ebb746681874c66838a9dc995e648bf8dcee5cb77e0106842",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 2
+      }
+    },
+    {
+      "path": "technical-reads/Tidy First/08 - 4. New Interface, Old Implementation _ Tidy First?.pdf",
+      "bytes": 39095,
+      "status": "available",
+      "sha256": "7d0bcc8f3283c80eb83eb0a53af822051f3d1985755a4cc469b979be80447bbc",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 1
+      }
+    },
+    {
+      "path": "technical-reads/Tidy First/09 - 5. Reading Order _ Tidy First?.pdf",
+      "bytes": 36158,
+      "status": "available",
+      "sha256": "385d770a1c010848ebf3e0bb6dfe1d7b0aaa8f046a0e5538b914b7274c5560cc",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 2
+      }
+    },
+    {
+      "path": "technical-reads/Tidy First/10 - 6. Cohesion Order _ Tidy First?.pdf",
+      "bytes": 43632,
+      "status": "available",
+      "sha256": "3fb9cf0d383ddaeb3add4fdae749369dd7dc29edbedccc32e8f24842f1bab6d5",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 2
+      }
+    },
+    {
+      "path": "technical-reads/Tidy First/11 - 7. Move Declaration and Initialization Together _ Tidy First?.pdf",
+      "bytes": 51298,
+      "status": "available",
+      "sha256": "af2ae04d8612273c6d88974b968c3a521afcaaf4b73b708b543164c3ebe20965",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 2
+      }
+    },
+    {
+      "path": "technical-reads/Tidy First/12 - 8. Explaining Variables _ Tidy First?.pdf",
+      "bytes": 43408,
+      "status": "available",
+      "sha256": "a09891cd5ec8604eb18fdc59f6d6644c253281089d263efc900c6e1f1cfbbd70",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 2
+      }
+    },
+    {
+      "path": "technical-reads/Tidy First/13 - 9. Explaining Constants _ Tidy First?.pdf",
+      "bytes": 52480,
+      "status": "available",
+      "sha256": "a2dad3b8f5362971360e8bef44ef68f72ab7cc0ea671b87774b98245cd39ffa3",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 2
+      }
+    },
+    {
+      "path": "technical-reads/Tidy First/14 - 10. Explicit Parameters _ Tidy First?.pdf",
+      "bytes": 44384,
+      "status": "available",
+      "sha256": "feea9de51eb3854f340b3a66fbbf971b31c7d462f4e4e864857e4a3f3028fb75",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 2
+      }
+    },
+    {
+      "path": "technical-reads/Tidy First/15 - 11. Chunk Statements _ Tidy First?.pdf",
+      "bytes": 43372,
+      "status": "available",
+      "sha256": "9dbe655943ffca56ad22f493fab5a2b5c7e65ee268d5f75aeda80fa798a0a82a",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 1
+      }
+    },
+    {
+      "path": "technical-reads/Tidy First/16 - 12. Extract Helper _ Tidy First?.pdf",
+      "bytes": 48333,
+      "status": "available",
+      "sha256": "b195bb205bb4ccd73ede7e5ba821ea403082170289c48472d8e6d05f68657449",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 2
+      }
+    },
+    {
+      "path": "technical-reads/Tidy First/17 - 13. One Pile _ Tidy First?.pdf",
+      "bytes": 44407,
+      "status": "available",
+      "sha256": "932267da8ed28ee0f3383efe1cf5f18fbb2dea76eaf846e8f6f59ce75006e6b0",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 2
+      }
+    },
+    {
+      "path": "technical-reads/Tidy First/18 - 14. Explaining Comments _ Tidy First?.pdf",
+      "bytes": 48164,
+      "status": "available",
+      "sha256": "8828e7ee2a8be4511d1c2513426703ade7b3d07826e80bc2a09746a696bae941",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 2
+      }
+    },
+    {
+      "path": "technical-reads/Tidy First/19 - 15. Delete Redundant Comments _ Tidy First?.pdf",
+      "bytes": 54435,
+      "status": "available",
+      "sha256": "ebfe73dd0e80cfe71a0b087600b22ebf989307dbcdbbbc3f7d6ee50d58ee49d1",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 2
+      }
+    },
+    {
+      "path": "technical-reads/Tidy First/20 - II. Managing _ Tidy First?.pdf",
+      "bytes": 41560,
+      "status": "available",
+      "sha256": "7dd96b9fcc0d979dbc7bc7efea1c4bba15afca85e0f2a2bd94fb15bbdf9a6eae",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 2
+      }
+    },
+    {
+      "path": "technical-reads/Tidy First/21 - 16. Separate Tidying _ Tidy First?.pdf",
+      "bytes": 81775,
+      "status": "available",
+      "sha256": "2b139818ae72624e2001519be60bc2a143e369cbc718b95ba3805ec64d55920c",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 4
+      }
+    },
+    {
+      "path": "technical-reads/Tidy First/22 - 17. Chaining _ Tidy First?.pdf",
+      "bytes": 61147,
+      "status": "available",
+      "sha256": "ac4c33cd841ff102e7598355cd7ee6e60fb929f64a219e1074b43420427bfbc2",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 4
+      }
+    },
+    {
+      "path": "technical-reads/Tidy First/23 - 18. Batch Sizes _ Tidy First?.pdf",
+      "bytes": 170468,
+      "status": "available",
+      "sha256": "e3b072ddc2d19965236e678a7e4ccebc06cd03458b5a164367b010923191f364",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 6
+      }
+    },
+    {
+      "path": "technical-reads/Tidy First/24 - 19. Rhythm _ Tidy First?.pdf",
+      "bytes": 60111,
+      "status": "available",
+      "sha256": "1326f58f89a961f02ff10dd20495d34e21426bcf7d6bdf70c49b626ad8be40a2",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 2
+      }
+    },
+    {
+      "path": "technical-reads/Tidy First/25 - 20. Getting Untangled _ Tidy First?.pdf",
+      "bytes": 41195,
+      "status": "available",
+      "sha256": "42793a075c90dae9b0761ffa7e06fb4915e90da77fd5cb5dd89149921aca0273",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 2
+      }
+    },
+    {
+      "path": "technical-reads/Tidy First/26 - 21. First, After, Later, Never _ Tidy First?.pdf",
+      "bytes": 68844,
+      "status": "available",
+      "sha256": "c53b1ea2b763e3b94acbb4a9de6b22c63f8596f6127411057f7b4ce5c61c6e6e",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 5
+      }
+    },
+    {
+      "path": "technical-reads/Tidy First/27 - III. Theory _ Tidy First?.pdf",
+      "bytes": 48822,
+      "status": "available",
+      "sha256": "9205fdfa34541b57141e67fcf08c63e335a3899b9f53614d3842a787fa8e48fc",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 2
+      }
+    },
+    {
+      "path": "technical-reads/Tidy First/28 - 22. Beneficially Relating Elements _ Tidy First?.pdf",
+      "bytes": 78861,
+      "status": "available",
+      "sha256": "9d6d827706ca33b91391410c0baaa7c579a229b4b6b981c35fbc2404cb508bf1",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 4
+      }
+    },
+    {
+      "path": "technical-reads/Tidy First/29 - 23. Structure and Behavior _ Tidy First?.pdf",
+      "bytes": 58514,
+      "status": "available",
+      "sha256": "fbca80aa6f49f3e06a9aa3599338e185703e0918d4e808f1da2ea57c18917582",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 4
+      }
+    },
+    {
+      "path": "technical-reads/Tidy First/30 - 24. Economics: Time Value and Optionality _ Tidy First?.pdf",
+      "bytes": 46111,
+      "status": "available",
+      "sha256": "dfa35205204765e681f22743687c0301fe49445319ebe6fed5f90c17c62a1130",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 2
+      }
+    },
+    {
+      "path": "technical-reads/Tidy First/31 - 25. A Dollar Today > A Dollar Tomorrow _ Tidy First?.pdf",
+      "bytes": 49885,
+      "status": "available",
+      "sha256": "7d45b5741af9518828777c39cae74561c2ff8873a440e406d170aaf8d982ce09",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 3
+      }
+    },
+    {
+      "path": "technical-reads/Tidy First/32 - 26. Options _ Tidy First?.pdf",
+      "bytes": 62725,
+      "status": "available",
+      "sha256": "24fdd7cca87b906574ceaf3948dbb43514aee72c3319bc9ff55cf175e6c2ef1f",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 4
+      }
+    },
+    {
+      "path": "technical-reads/Tidy First/33 - 27. Options Versus Cash Flows _ Tidy First?.pdf",
+      "bytes": 49891,
+      "status": "available",
+      "sha256": "803f84e3bf0f3ea152d9e31809926457c9e33c27649d21bbfd3c71fa4893dd72",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 2
+      }
+    },
+    {
+      "path": "technical-reads/Tidy First/34 - 28. Reversible Structure Changes _ Tidy First?.pdf",
+      "bytes": 47866,
+      "status": "available",
+      "sha256": "353da6fc7d8f85ba640658f8629725d58e4527ff716446309dc3787a496e7c26",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 3
+      }
+    },
+    {
+      "path": "technical-reads/Tidy First/35 - 29. Coupling _ Tidy First?.pdf",
+      "bytes": 81659,
+      "status": "available",
+      "sha256": "149ff9511a0f3a519e541f50f3e1098f30cac7aa6614d0be0eb1b9ef4672e714",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 4
+      }
+    },
+    {
+      "path": "technical-reads/Tidy First/36 - 30. Constantine’s Equivalence _ Tidy First?.pdf",
+      "bytes": 87833,
+      "status": "available",
+      "sha256": "ec062de4476fe2a8627231eb40b89366bfedb9231dc93946f2f0158c3cd4e29a",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 4
+      }
+    },
+    {
+      "path": "technical-reads/Tidy First/37 - 31. Coupling Versus Decoupling _ Tidy First?.pdf",
+      "bytes": 83093,
+      "status": "available",
+      "sha256": "cc79e7667dee54a0a3bf2859c54942a1dfbb596e0882543459a69cbf6398e678",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 4
+      }
+    },
+    {
+      "path": "technical-reads/Tidy First/38 - 32. Cohesion _ Tidy First?.pdf",
+      "bytes": 80683,
+      "status": "available",
+      "sha256": "aca72ad4f0417cfbac5b08b7b92e08cee94a1dcc830e7506ac53dceb0bd57070",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 2
+      }
+    },
+    {
+      "path": "technical-reads/Tidy First/39 - 33. Conclusion _ Tidy First?.pdf",
+      "bytes": 69182,
+      "status": "available",
+      "sha256": "d5a1b01ba6b7d6541baed2da5cb17ce771670f3d6d09625b063ce58df8523abd",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 3
+      }
+    },
+    {
+      "path": "technical-reads/Tidy First/40 - Appendix. Annotated Reading List and References _ Tidy First?.pdf",
+      "bytes": 78583,
+      "status": "available",
+      "sha256": "21cd9b94654f215efb155632f2b049c75aa9b0158f3d150f41fa0ce82cb33e89",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 5
+      }
+    },
+    {
+      "path": "technical-reads/Tidy First/41 - Index _ Tidy First?.pdf",
+      "bytes": 217224,
+      "status": "available",
+      "sha256": "406a8f9cb6bfa7cef53a523a39967cb6e15969ae244ffe999e56125d0239df89",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 7
+      }
+    },
+    {
+      "path": "technical-reads/Tidy First/42 - About the Author _ Tidy First?.pdf",
+      "bytes": 46983,
+      "status": "available",
+      "sha256": "2be363061e28c5b8373976a34352b724e6c008d78ba6856c8e4a9af7bc79da34",
+      "pdf_check": {
+        "status": "parseable",
+        "pages": 1
+      }
+    }
+  ]
+}

@@ -50,4 +50,6 @@ For short builds, focus on one blocking uncertainty, one compact design and one 
 
 For book-backed research, version 0.3 includes a complete bibliography and local PDF helper inside technical-research. [Library setup](library-setup.md) explains private source access, bounded page reading and citations. The books themselves are not included. The [topic map](../skills/technical-research/references/library-workflow.md) connects likely engineering questions to candidate chapters; it does not claim that every chapter has been read.
 
+Version 0.4 additionally includes prepared extracted text and embeddings under the downloaded kit's `library/` folder, with no raw PDFs. Use its search helper for keyword or offline semantic retrieval and give either provider that folder's actual path. The installation keeps the larger corpus separate from the lightweight skill copies.
+
 There is no exhaustive-options guarantee. Compare the options that can change the actual decision. A skill should help you explain the mechanism yourself; it does not establish correctness or replace independent checks of implementation.
